@@ -2119,7 +2119,7 @@ FALSE
 nil
 0 0  diagnostic marker
 a Title
-44
+45
 TControlStatic
 0 {reference}
 EncX1
@@ -6484,6 +6484,5307 @@ nil
 0 0  diagnostic marker
 Brake Disengage
 FALSE
+TControlPlate
+7 {reference}
+AsciiCommands
+1245 45
+1405 90
+-16777211
+Tahoma
+1
+-16777208
+8
+0
+6
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure BeginDrag;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Drag;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure EndDrag;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure DoubleClickLeft;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+19
+procedure Setup;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+
+{---------------------------------------------------------------------}
+{ The AsciiCommands component can place into a project the ability to }
+{ respond to 3 letter ASCII commands. It is an example of a serial    }
+{ port application and contains a Comm package to manage the port.    }
+{ The package is initialized by an Autostart Block on the Blocks side }
+{ that calls Initialize. It is sufficient to copy|paste the           }
+{ AsciiCommands package into another project. It will initialize      }
+{ itself and respond to commands at 9600 baud, N, 8, 1. The           }
+{ interpreter uses hash function indexed buckets for various command. }
+{ patterns and is a general expression evaluator always returning     }
+{ a command response. To continue the trail, open up the "Initialize" }
+{ procedure. This will lead you to the MonitorCommPort routine.       }
+{_____________________________________________________________________}
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+function  CanClose:boolean;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+299 69 1993170 69 29
+1
+TStaticField
+0 {reference}
+9 7 62 21
+nil
+
+TRUE
+Autostart
+Autostart
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+17 {ReferenceLink}
+299 98 8388736 70 29
+2
+TPathNameField
+0 {reference}
+9 7 55 21
+nil
+
+TRUE
+Initialize
+Main.AsciiCommands.Initialize
+Main.AsciiCommands.
+Initialize
+TRUE
+TRUE
+TRUE
+TStaticField
+0 {reference}
+58 14 58 14
+nil
+
+TRUE
+
+;
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+Ascii Commands
+2
+TControlPlate
+8 {reference}
+Comm
+1245 100
+1405 155
+-16777211
+Tahoma
+1
+-16777208
+8
+0
+6
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDrag;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure DoubleClickLeft;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+11
+procedure Setup;
+{-------------------------------------------------------------------------------------------}
+{ The channel data area is layed out as follows:                                            }
+{                                                                                           }
+{ 0,1 Command                                                                               }
+{ 2,3 Error Result                                                                          }
+{ 4-- Data                                                                                  }
+{___________________________________________________________________________________________}
+
+  begin
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+function  CanClose:boolean;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_Procedure
+22 {reference}
+0 {ReferenceLink}
+293 65 8388736 261 29
+1
+TStaticField
+0 {reference}
+9 7 254 21
+nil
+
+TRUE
+Procedure Set_Communication_Properties
+Set_Communication_Properties
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+9 {ReferenceLink}
+293 94 8388736 530 29
+12
+TPathNameField
+0 {reference}
+9 7 180 21
+nil
+
+TRUE
+Assign_IP_Address_and_Port
+Main.AsciiCommands.Comm.Assign_IP_Address_and_Port
+Main.AsciiCommands.Comm.
+Assign_IP_Address_and_Port
+TRUE
+TRUE
+TRUE
+TStaticField
+0 {reference}
+183 7 201 21
+nil
+
+TRUE
+IP3
+(
+TNumericField
+0 {reference}
+208 7 248 21
+nil
+Number
+TRUE
+ 1.92000000000000E+0002
+FALSE
+TStaticField
+0 {reference}
+251 7 269 21
+nil
+
+TRUE
+IP2
+,
+TNumericField
+0 {reference}
+276 7 316 21
+nil
+Number
+TRUE
+ 1.68000000000000E+0002
+FALSE
+TStaticField
+0 {reference}
+319 7 337 21
+nil
+
+TRUE
+IP1
+,
+TNumericField
+0 {reference}
+344 7 370 21
+nil
+Number
+TRUE
+ 2.00000000000000E+0000
+FALSE
+TStaticField
+0 {reference}
+373 7 391 21
+nil
+
+TRUE
+IP0
+,
+TNumericField
+0 {reference}
+398 7 438 21
+nil
+Number
+TRUE
+ 1.02000000000000E+0002
+FALSE
+TStaticField
+0 {reference}
+441 7 465 21
+nil
+
+TRUE
+Port
+,
+TNumericField
+0 {reference}
+472 7 505 21
+nil
+Number
+TRUE
+ 2.30000000000000E+0001
+FALSE
+TStaticField
+0 {reference}
+508 14 508 14
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+Ethernet Comm 1.00
+0
+11
+TUserProcedure
+9 {reference}
+TRUE
+11
+procedure Assign_IP_Address_and_Port(IP3:integer; IP2:integer; IP1:integer; IP0:integer; Port:integer);  
+  begin
+  EthernetSetLongintIPAddress(
+    IPAddressToLongint(IP3,IP2,IP1,IP0),
+    IPAddressToLongint(255,255,255,0),
+    IPAddressToLongint(IP3,IP2,IP1,250));
+	BeginTask(TaskAddr(MaintainEthernetPolling));
+
+  EthernetSocketInitialize(PortHandle,Port);
+	PeekPresent:=false;
+  end;
+TRUE
+TUserFunction
+10 {reference}
+TRUE
+16
+function CharacterPresent:boolean;
+  begin
+	if PeekPresent then
+	  CharacterPresent:=true
+	else
+	  begin
+	  PeekCharacter:=EthernetGetData(PortHandle);
+		if PeekCharacter=-1 then
+		  CharacterPresent:=false
+		else
+		  begin
+			CharacterPresent:=true;
+			PeekPresent:=true;
+			end;
+		end;
+  end;
+TRUE
+TUserFunction
+11 {reference}
+TRUE
+18
+function GetCharacter:longint;
+
+  var Value:longint;
+
+  begin
+	if PeekPresent then
+	  begin
+		GetCharacter:=PeekCharacter and $FF;
+		PeekPresent:=false;
+		end
+	else
+	  begin
+    Value:=EthernetGetData(PortHandle);
+    if Value=-1 then
+      Escape(ec_DataNotPresent);
+    GetCharacter:=Value and $FF
+		end;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+8
+procedure SendCharacter(Value:longint);
+
+  var Response:string;
+  
+  begin
+  StringAtPut(Response,0,Value);
+	EthernetWriteBuffer(Response,1,PortHandle);
+  end; 
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure SendString(var aString:string);
+  begin
+	EthernetWriteBuffer(aString,length(aString),PortHandle);
+  end;
+TRUE
+TUserConstant
+0 {reference}
+FALSE
+PortHandle
+0
+TUserConstant
+0 {reference}
+FALSE
+ec_DataNotPresent
+1005
+TUserProcedure
+0 {reference}
+FALSE
+9
+Procedure MaintainEthernetPolling;
+  begin
+  while true do
+    begin
+    EthernetPoll;		
+    yield;
+    end;
+  end;
+
+TRUE
+TUserVariable
+0 {reference}
+FALSE
+PeekCharacter
+longint
+FALSE
+10
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+PeekPresent
+Boolean
+FALSE
+10
+1
+0
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MyProcedure;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+-2134376448
+1
+
+FALSE
+1
+FALSE
+
+TControlPlate
+12 {reference}
+Comm
+1245 165
+1405 220
+-16777211
+Tahoma
+1
+-16777208
+8
+0
+6
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure BeginDrag;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Drag;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure EndDrag;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure DoubleClickLeft;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Setup;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+function  CanClose:boolean;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_Procedure
+0 {reference}
+0 {ReferenceLink}
+323 87 8388736 261 29
+1
+TStaticField
+0 {reference}
+9 7 254 21
+nil
+
+TRUE
+Procedure Set_Communication_Properties
+Set_Communication_Properties
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+15 {ReferenceLink}
+323 116 8388736 216 29
+4
+TPathNameField
+0 {reference}
+9 7 157 21
+nil
+
+TRUE
+Initialize_With_Baud_Rate
+Main.AsciiCommands.Comm.Initialize_With_Baud_Rate
+Main.AsciiCommands.Comm.
+Initialize_With_Baud_Rate
+TRUE
+TRUE
+TRUE
+TStaticField
+0 {reference}
+160 14 160 14
+nil
+
+TRUE
+
+(
+TLocalListField
+0 {reference}
+167 7 199 21
+nil
+
+TRUE
+9600
+9600
+5
+9600
+9600
+19200
+19200
+38400
+38400
+57600
+57600
+115200
+115200
+TStaticField
+0 {reference}
+202 14 202 14
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+RS232 for Arm Version 1.00
+0
+16
+TUserConstant
+0 {reference}
+FALSE
+FifoSize
+255
+TUserProcedure
+13 {reference}
+TRUE
+4
+Function CharacterPresent:boolean;
+  begin
+  CharacterPresent:= Head <> Tail;
+  end;
+TRUE
+TUserProcedure
+14 {reference}
+TRUE
+8
+Function GetByte:longint;
+
+  var Value:longint;
+
+  begin
+  Value:=GetCharacter;
+  GetByte:=Value;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+17
+Function GetCharacter:longint;
+
+  var TimeoutCounter:longint;
+
+  begin
+  TimeoutCounter:=0;
+  while Head=Tail do
+    begin
+    yield;
+    TimeoutCounter:=TimeoutCounter+1;
+    if timeoutCounter > 1000 then
+      Escape(600);
+    end;
+
+  GetCharacter:=Fifo[Tail];
+  Tail:=(Tail+1) and FifoSize;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+8
+Function GetWord:longint;
+
+  var HiByte:longint;
+  var LowByte:longint;
+
+  begin
+  GetWord:=((GetByte*$100)+GetByte) and $FFFF;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+Function HardwareCharacterPresent:boolean;
+  begin
+  HardwareCharacterPresent:=(Server.MemReadByte($4006A016) <> 0);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+Function HardwareGetCharacter:longint;
+  begin
+  HardwareGetCharacter:=Server.MemReadByte($4006A007) and $FF;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+8
+Procedure ClearFifo;
+  begin 
+  Server.MemReadbyte($4006A004); {read s1 status register}
+  Server.MemReadByte($4006A007); {read data value to clear overrun bit}
+  Server.MemWriteByte($4006A011,$C0); {flush fifos to realign pointers}
+  Head:=0;
+  Tail:=0;
+  end;
+TRUE
+TUserProcedure
+15 {reference}
+TRUE
+44
+Procedure Initialize_With_Baud_Rate(ListShowBaudRate:longint {9600 19200 38400 57600 115200});
+  begin
+  {set to 9600 baud}
+  Server.MemWriteByte($4006A003,0); {disable uart transmit and receive}
+  if ListShowBaudRate=9600 then
+    begin
+    Server.MemWriteByte($4006A000,2);
+    Server.MemWriteByte($4006A001,$8B);
+    Server.MemWriteByte($4006A00A,(Server.MemReadByte($4006A00A) and $E0) or 1);
+    end
+  else if ListShowBaudRate=19200 then
+    begin
+    Server.MemWriteByte($4006A000,1);
+    Server.MemWriteByte($4006A001,$45);
+    Server.MemWriteByte($4006A00A,(Server.MemReadByte($4006A00A) and $E0) or 17);
+    end
+  else if ListShowBaudRate=38400 then
+    begin
+    Server.MemWriteByte($4006A000,0);
+    Server.MemWriteByte($4006A001,$A2);
+    Server.MemWriteByte($4006A00A,(Server.MemReadByte($4006A00A) and $E0) or 24);
+    end
+  else if ListShowBaudRate=57600 then
+    begin
+    Server.MemWriteByte($4006A000,0);
+    Server.MemWriteByte($4006A001,$6C);
+    Server.MemWriteByte($4006A00A,(Server.MemReadByte($4006A00A) and $E0) or 16);
+    end
+  else if ListShowBaudRate=115200 then
+    begin
+    Server.MemWriteByte($4006A000,0);
+    Server.MemWriteByte($4006A001,$36);
+    Server.MemWriteByte($4006A00A,(Server.MemReadByte($4006A00A) and $E0) or 8);
+    end
+  else
+    Escape(ParameterOutOfRangeEscapeCode);
+  Server.MemWriteByte($4006A003,$0C);{reenable uart after adjustments}
+
+  RS232SetEnable(on);
+  TurnYellowLed(off);
+  ClearFifo;
+  BeginTask(TaskAddr(MaintainFifo));
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+25
+Procedure MaintainFifo;
+
+  var Counter:longint;
+
+  begin
+  DebugCounter:=0;
+  Counter:=0;
+  ClearFifo;
+  while true do
+    begin
+    DebugCounter:=DebugCounter+1;
+    while HardwareCharacterPresent do
+      begin
+      Fifo[Head]:=HardwareGetCharacter;
+      Head:=(Head+1) and FifoSize;
+      Counter:=Counter+1;
+      if Counter > 20 then
+        begin
+        Counter:=0;
+        yield;
+        end;
+      end;
+    yield;
+    end;
+  end;
+TRUE
+TUserProcedure
+16 {reference}
+TRUE
+6
+procedure SendCharacter(Value:longint);
+  begin
+  while (Server.MemReadByte($4006A004) and $40) = 0 do
+    yield;
+  Server.MemWriteByte($4006A007,Value);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+14
+Procedure SendString(var aString:string);
+
+  var scanner:longint;
+  var char:longint;
+
+  begin
+  scanner:=0;
+  repeat  
+    Char:=StringAt(aString,scanner);
+    if Char <> 0 then
+      SendCharacter(Char);
+    scanner:=scanner+1;
+  until Char=0;
+  end;
+TRUE
+TUserVariable
+0 {reference}
+FALSE
+Fifo
+Longint
+TRUE
+FifoSize
+0
+0
+TUserVariable
+0 {reference}
+FALSE
+Head
+Longint
+FALSE
+10
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+Tail
+Longint
+FALSE
+10
+1
+0
+TUserVariable
+0 {reference}
+TRUE
+DebugCounter
+Longint
+FALSE
+10
+1
+0
+-2134900736
+3
+
+FALSE
+1
+FALSE
+
+134
+TUserConstant
+0 {reference}
+FALSE
+MaxGroupNumber
+10
+TUserConstant
+0 {reference}
+FALSE
+MaxNamedProcedures
+50
+TUserConstant
+0 {reference}
+FALSE
+MaxParams
+10
+TUserConstant
+0 {reference}
+FALSE
+MaxUserBooleans
+100
+TUserConstant
+0 {reference}
+FALSE
+MaxUserLongints
+100
+TUserConstant
+0 {reference}
+FALSE
+MaxUserNumbers
+100
+TUserConstant
+0 {reference}
+FALSE
+MaxUserTasks
+16
+TUserProcedure
+0 {reference}
+FALSE
+5
+Function AdvanceChar(var Command:string; var Index:integer):integer;
+  begin
+  AdvanceChar:=StringAt(Command,Index);
+  Index:=Index+1;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+10
+Function ArrayIndexExpression:integer;
+  begin
+  if InspectToken.Kind=tk_Literal then
+    begin
+    ArrayIndexExpression:=LongintInString(InspectToken.Value);
+    Match(tk_Literal);
+    end
+  else
+    Escape(7000);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+7
+Function BooleanToInteger(Value:boolean):integer;
+  begin
+  if Value then
+    BooleanToInteger:=1
+  else
+    BooleanToInteger:=0;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+9
+Function CharTohex(Value:integer):integer;
+  begin
+  if (Value>=48) and (Value <=57) then
+    CharToHex:=Value-48
+  else if (Value>=65) and (Value<=70) then
+    CharToHex:=Value-55
+  else
+    Escape(Error.Assertion);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+53
+Function DoubleInString(var NumberString:string):double;
+{----------------------------------------------------------}
+
+  var scanner:longint;
+  var accumulator:double;
+  var IsNegative:boolean;
+  var NewPart:longint;
+  var Divisor:longint;
+  var DecimalPointFound:boolean;
+
+  begin
+  DecimalPointFound:=false;
+  scanner:=0;
+  while StringAt(NumberString,scanner)=32 {space} do
+    scanner:=scanner+1;
+
+  if StringAt(NumberString,scanner)=45 {minus sign} then
+    begin
+    IsNegative:=true
+    scanner:=scanner+1;
+    end
+  else
+    IsNegative:=false;
+
+  Accumulator:=0;
+  Divisor:=1;
+  while StringAt(NumberString,scanner) <> 0 do
+    begin
+    if StringAt(NumberString,scanner)=46 then
+      begin
+      DecimalPointFound:=true;
+      scanner:=scanner+1;
+      end
+    else
+      begin
+      NewPart:=StringAt(NumberString,scanner)-48; {ascii code zero}
+      yield;
+      if not DecimalPointFound then
+        Accumulator:=Accumulator*10+NewPart
+      else
+        begin
+        Divisor:=Divisor*10;
+        Accumulator:=Accumulator+(NewPart/Divisor);
+        end;
+      scanner:=scanner+1;
+      end;  
+    end;
+
+  if IsNegative then
+    DoubleInString:=-Accumulator
+  else
+    DoubleInString:=Accumulator;
+  end; 
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+25
+Function GetNextCurveBufferNumber:integer;
+
+  var GroupScanner:integer;
+  var CurveNumberScanner:integer;
+  var CurveNumberAlreadyUsed:boolean;
+
+  begin
+  for CurveNumberScanner:=1 to 2 do
+    begin
+    CurveNumberAlreadyUsed:=false;
+    for GroupScanner:=1 to MaxGroupNumber do
+      begin
+      if TimeRemaining < 400 then
+        yield;
+      if CurveBufferNumberForGroup[GroupScanner]=CurveNumberScanner then
+        CurveNumberAlreadyUsed:=true;
+      end;
+    if not CurveNumberAlreadyUsed then
+      begin
+      GetNextCurveBufferNumber:=CurveNumberScanner;
+      exit;
+      end;
+    end;    
+  GetNextCurveBufferNumber:=0; {no curve buffers available}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+14
+function GroupDimension(CandidateGroupNumber:integer):integer;
+
+  var GroupNumber:integer;
+
+  begin
+  GroupNumber:=IntegerConfineBetween(
+    CandidateGroupNumber,1,MaxGroupNumber,Error.GroupNumberOutOfBounds);
+
+  if GroupInitialized[GroupNumber]=0 then    
+    Escape(Error.GroupNotInitialized);
+
+  GroupDimension:=GroupDimensionArray[GroupNumber];
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+11
+Function HashIndexOfString(var aString:string):integer;
+
+  var FirstChar:integer;
+  var SecondChar:integer;
+
+  begin
+  FirstChar:=IntegerConfineBetween(StringAt(aString,0)-AsciiCode.BigA,0,25,Error.Grammar);
+  SecondChar:=IntegerConfineBetween(StringAt(aString,1)-AsciiCode.BigA,0,25,Error.Grammar);
+
+  HashIndexOfString:=IntegerConfineBetween((FirstChar*26)+SecondChar,0,676,Error.Assertion);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+15
+Function HexValueToCharacter(Value:integer):integer;
+  begin
+  try
+    Value:=IntegerConfineBetween(Value,0,15,Error.Assertion)
+  recover
+    begin
+    prompter.writeln('Value: ',value);
+    Value:=0;
+    end;
+
+  if (Value >=0) and (Value <=9) then  
+    HexValueToCharacter:=Value+48
+  else
+    HexValueToCharacter:=Value+55
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+17
+Function IndexAtName(var aName:string):integer;
+
+  var scanner:integer;
+
+  begin
+  for scanner:=1 to MaxNamedProcedures do
+    begin
+    if (scanner and 15)=0 then 
+      yield;
+    if ProcedureName[scanner]=aName then
+      begin
+      IndexAtName:=scanner;
+      exit;
+      end;
+    end;
+  Escape(Error.UnableToFindNamedProcedure);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+11
+function InterpretCommand(var Command:string):double;
+
+  var Ref:TDRef;
+  var Answer:double;
+
+  begin
+  CommandInit(Command);  
+  Ref.Init;
+  Expression(Answer)
+  InterpretCommand:=Answer;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+31
+Function LongintInString(var NumberString:string):longint;
+{----------------------------------------------------------}
+
+  var scanner:longint;
+  var accumulator:longint;
+  var IsNegative:boolean;
+
+  begin
+  if StringAt(NumberString,0)=AsciiCode.MinusSign then
+    begin
+    IsNegative:=true;
+    scanner:=1;
+    end
+  else
+    begin
+    IsNegative:=false;
+    scanner:=0;  
+    end;
+
+  Accumulator:=0;
+  while StringAt(NumberString,scanner) <> 0 do
+    begin
+    Accumulator:=Accumulator*10+StringAt(NumberString,scanner)-AsciiCode.Zero;     
+    scanner:=scanner+1;
+    end;  
+
+  if IsNegative then
+    LongintInString:=-Accumulator
+  else
+    LongintInString:=Accumulator;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+7
+Function NextBoolean:boolean;
+  begin
+  if NextLong <> 0 then
+    NextBoolean:=true
+  else
+    NextBoolean:=false;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+8
+Function NextLong:longint;
+
+  var Answer:double;
+  
+  begin
+  Expression(Answer);  
+  NextLong:=round(Answer);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+5
+Function NextLongAssignmentPermitted:longint;
+  begin
+  Permit(tk_Assignment);
+  NextLongAssignmentPermitted:=NextLong;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+8
+Function NextSingle:single;
+
+  var Answer:double;
+
+  begin  
+  Expression(Answer);  
+  NextSingle:=Answer;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+10
+Function PerformHashFunction(var aRef:TDRef):single;
+
+  var HashIndex:longint;
+
+  begin
+  ht_DRef:=aRef;
+  HashIndex:=HashIndexOfString(InspectToken.Value);
+  ExecuteTask(HashProcedureArray[HashIndex]);
+  PerformHashFunction:=ht_DRef.Value;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+7
+Function ValidUserTaskNumber(TaskNumber:integer):integer;
+  begin
+  if (TaskNumber < 1) or (TaskNumber > MaxUserTasks) then
+    Escape(ParameterOutOfRangeEscapeCode)
+  else
+    ValidUserTaskNumber:=TaskNumber;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+49
+Procedure bk_ab;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigT then
+      begin {ABT}      
+      Axis[ht_DRef.AxisNumber].Abort;
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigT then 
+      begin
+      if n=2 then            
+        T2[ht_DRef.AxisNumber].Abort        
+      else if n=3 then
+        T3[ht_DRef.AxisNumber].Abort 
+{$IFDEF MoreThan3Axes}       
+      else if n=4 then
+        T4[ht_DRef.AxisNumber].Abort        
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].Abort
+      else if n=6 then
+        T6[ht_DRef.AxisNumber].Abort
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+142
+Procedure bk_ac;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigL then
+      begin {ACL}
+      try                
+        Axis[ht_DRef.AxisNumber].SetAccel(NextSingle)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].Accel
+      end
+    else if NextChar=AsciiCode.BigP then
+      begin {ACP}
+      try                
+        Axis[ht_DRef.AxisNumber].SetActualPosition(NextDouble)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].ActualPosition
+      end
+    else if NextChar=AsciiCode.BigT then
+      begin {AIC}
+      Axis[ht_DRef.AxisNumber].ArmCapture;
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    if NextChar=AsciiCode.BigL then 
+      begin
+      if n=2 then
+        begin
+        try
+          T2[ht_DRef.AxisNumber].SetAccel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T2[ht_DRef.AxisNumber].Accel
+        end
+
+      else if n=3 then
+        begin
+        try
+          T3[ht_DRef.AxisNumber].SetAccel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T3[ht_DRef.AxisNumber].Accel
+        end
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        begin
+        try
+          T4[ht_DRef.AxisNumber].SetAccel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T4[ht_DRef.AxisNumber].Accel
+        end
+
+      else if n=5 then
+        begin
+        try
+          T5[ht_DRef.AxisNumber].SetAccel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T5[ht_DRef.AxisNumber].Accel
+        end
+
+      else if n=6 then
+        begin
+        try
+          T6[ht_DRef.AxisNumber].SetAccel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T6[ht_DRef.AxisNumber].Accel
+        end
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else if NextChar=AsciiCode.BigP then 
+      begin      
+      if n=2 then            
+        T2[ht_DRef.AxisNumber].SetActualPosition(
+          NextDouble,
+          NextDouble)                 
+
+      else if n=3 then
+        T3[ht_DRef.AxisNumber].SetActualPosition(
+          NextDouble,
+          NextDouble,
+          NextDouble)        
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_DRef.AxisNumber].SetActualPosition(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].SetActualPosition(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+
+      else if n=6 then
+        T6[ht_DRef.AxisNumber].SetActualPosition(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+25
+Procedure bk_ai;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then
+    begin
+    if NextChar=AsciiCode.BigC then
+      begin {AIC}
+      Axis[ht_DRef.AxisNumber].ArmCapture;
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+73
+Procedure bk_am;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    ht_DRef.Value:=NextSingle;
+    if NextChar=AsciiCode.BigP then {current setting}
+      SetCurrent(Axis[ht_DRef.AxisNumber],ht_DRef.Value)
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigB then {relative move}
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].AppendMoveBy(
+          NextDouble,NextDouble)
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].AppendMoveBy(
+          NextDouble,NextDouble,NextDouble)
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].AppendMoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].AppendMoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=6 then
+        T6[ht_Dref.AxisNumber].AppendMoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else if NextChar=AsciiCode.BigT then {absolute move}
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].AppendMoveTo(
+          NextDouble,NextDouble)
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].AppendMoveTo(
+          NextDouble,NextDouble,NextDouble)
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].AppendMoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].AppendMoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=6 then
+        T6[ht_Dref.AxisNumber].AppendMoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+28
+Procedure bk_an;
+
+  var NextChar:integer;
+  var n:integer;
+  var CallIndex:integer;
+  var scanner:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then
+    begin    
+    if InspectToken.Kind=tk_Word then    
+      begin           
+      CallIndex:=IndexAtName(InspectToken.Value);
+      Match(tk_Word);      
+      for scanner:=1 to ProcedureParamCount[CallIndex] do
+        Param[scanner]:=NextSingle;      
+      AbortTask(ProcedureAddress[CallIndex]);      
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+34
+Procedure bk_ar;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    Escape(Error.CoordinatedGroupRequired)
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigC then
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].AppendArc(
+          NextDouble,NextSingle, NextSingle)
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].AppendArc(
+          NextDouble,NextSingle,NextSingle, NextDouble)
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+18
+Procedure bk_au;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then
+    begin
+    n:=ValidUserTaskNumber(nextLong);
+    ht_DRef.Value:=n;
+    AbortTask(UserTask[n])
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+24
+Procedure bk_ax;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigC then
+      begin {AIC}      
+  {    Axis[ht_DRef.AxisNumber].ArmIndexCapture;}
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+92
+Procedure bk_bm;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  ht_DRef.Value:=0;
+
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then
+    begin
+    if NextChar=AsciiCode.BigB then {bmb}
+      Axis[ht_DRef.AxisNumber].BeginMoveBy(NextDouble)
+
+    else if NextChar=AsciiCode.BigT then {bmt}
+      Axis[ht_DRef.AxisNumber].BeginMoveTo(NextDouble);
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);
+    if NextChar=AsciiCode.BigB then {relative move}
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].BeginMoveBy(NextDouble,NextDouble)
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].BeginmoveBy(
+          NextDouble,NextDouble,NextDouble)
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].BeginmoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].BeginMoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=6 then
+        T6[ht_Dref.AxisNumber].BeginMoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else if NextChar=AsciiCode.BigC then
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].BeginMoveAlongCurve
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].BeginMoveAlongCurve
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].BeginMoveAlongCurve
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].BeginMoveAlongCurve
+      else if n=6 then
+        T6[ht_Dref.AxisNumber].BeginMoveAlongCurve
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else if NextChar=AsciiCode.BigT then {absolute move}
+      begin
+      if n=2 then
+        begin
+        T2[ht_DRef.AxisNumber].BeginMoveTo(
+          NextDouble,NextDouble);
+        end
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].BeginMoveTo(
+          NextDouble,NextDouble,NextDouble)
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].BeginMoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].BeginMoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=6 then
+        T6[ht_Dref.AxisNumber].BeginMoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+28
+Procedure bk_bn;
+
+  var NextChar:integer;
+  var n:integer;
+  var CallIndex:integer;
+  var scanner:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then
+    begin    
+    if InspectToken.Kind=tk_Word then    
+      begin           
+      CallIndex:=IndexAtName(InspectToken.Value);
+      Match(tk_Word);      
+      for scanner:=1 to ProcedureParamCount[CallIndex] do
+        Param[scanner]:=NextSingle;      
+      BeginTask(ProcedureAddress[CallIndex]);      
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+49
+Procedure bk_bs;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigT then
+      begin {ABT}      
+      Axis[ht_DRef.AxisNumber].BeginStop;
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigT then 
+      begin
+      if n=2 then            
+        T2[ht_DRef.AxisNumber].BeginStop        
+      else if n=3 then
+        T3[ht_DRef.AxisNumber].BeginStop 
+{$IFDEF MoreThan3Axes}       
+      else if n=4 then
+        T4[ht_DRef.AxisNumber].BeginStop        
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].BeginStop
+      else if n=6 then
+        T6[ht_DRef.AxisNumber].BeginStop
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+19
+Procedure bk_bu;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then
+    begin
+    n:=ValidUserTaskNumber(nextLong);
+    ht_DRef.Value:=n;
+    BeginTask(UserTask[n])
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+26
+Procedure bk_ca;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigB then
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].CaptureBit)
+    else if NextChar=AsciiCode.BigP then
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].CapturePosition
+    else if NextChar=AsciiCode.BigT then
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].CaptureHasTripped)
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+21
+Procedure bk_ch;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigT then
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].CaptureHasTripped)      
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+35
+Procedure bk_ci;
+
+  var NextChar:integer;
+  var BooleanParam:boolean;
+  var Index:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigV then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetCoordinateInversion(NextBoolean)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].CoordinateInversionIsOn);
+      end
+    else
+      GrammarError;
+    end
+
+  else if NextChar=AsciiCode.BigO then
+    begin
+    Index:=IntegerConfineBetween(NextLong,1,12,ParameterOutOfRangeEscapeCode);
+    BooleanParam:=NextBoolean;
+    ConfigureIoBitAsOutput(Index,BooleanParam);
+    ht_DRef.Value:=BooleanToInteger(BooleanParam);
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+69
+Procedure bk_cl;
+
+  var NextChar:integer;
+  var n:integer;
+  var CallIndex:integer;
+  var scanner:integer;
+  var BooleanParam:boolean;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigL then
+    begin    
+    if InspectToken.Kind=tk_Word then    
+      begin           
+      CallIndex:=IndexAtName(InspectToken.Value);
+      Match(tk_Word);      
+      for scanner:=1 to ProcedureParamCount[CallIndex] do
+        Param[scanner]:=NextSingle;      
+      ExecuteTask(ProcedureAddress[CallIndex]);      
+      ht_DRef.Value:=ReturnValue;
+      end
+    else
+      GrammarError;
+    end
+
+{$IFDEF Closed_Loop}
+  else if NextChar=AsciiCode.BigP then
+    begin
+    if ht_DRef.AxisTokenKind=tk_T1Axis then
+      begin
+      BooleanParam:=NextBoolean;
+      Closed_Loop.Set_Closed_Loop(Axis[ht_Dref.AxisNumber],BooleanParam);
+      ht_Dref.Value:=BooleanToInteger(BooleanParam);
+      end
+    else
+      GrammarError
+    end
+{$ENDIF}
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigR then
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].Clear
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].Clear
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].Clear
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].Clear
+      else if n=6 then
+        T6[ht_Dref.AxisNumber].Clear
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+110
+Procedure bk_co;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigP then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetCommandedPosition(NextDouble)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].CommandedPosition
+      end
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigP then
+      begin
+      if n=2 then
+        begin
+        try
+          T2[ht_DRef.AxisNumber].SetCommandedPosition(
+            NextDouble,
+            NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T2[ht_DRef.AxisNumber].CommandedPosition;
+        end
+
+      else if n=3 then
+        begin
+        try
+          T3[ht_DRef.AxisNumber].SetCommandedPosition(
+            NextDouble,
+            NextDouble,
+            NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T3[ht_DRef.AxisNumber].CommandedPosition;
+        end
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        begin
+        try
+          T4[ht_DRef.AxisNumber].SetCommandedPosition(
+            NextDouble,
+            NextDouble,
+            NextDouble,
+            NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T4[ht_DRef.AxisNumber].CommandedPosition;
+        end
+
+      else if n=5 then
+        begin
+        try
+          T5[ht_DRef.AxisNumber].SetCommandedPosition(
+            NextDouble,
+            NextDouble,
+            NextDouble,
+            NextDouble,
+            NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T5[ht_DRef.AxisNumber].CommandedPosition;
+        end
+
+
+      else if n=6 then
+        begin
+        try
+          T6[ht_DRef.AxisNumber].SetCommandedPosition(
+            NextDouble,
+            NextDouble,
+            NextDouble,
+            NextDouble,
+            NextDouble,
+            NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T6[ht_DRef.AxisNumber].CommandedPosition;
+        end
+{$ENDIF}
+
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+88
+Procedure bk_dc;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigL then
+      begin {ACL}
+      try                
+        Axis[ht_DRef.AxisNumber].SetDecel(NextSingle)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].Decel
+      end
+      
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    if NextChar=AsciiCode.BigL then 
+      begin
+      if n=2 then
+        begin
+        try
+          T2[ht_DRef.AxisNumber].SetDecel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T2[ht_DRef.AxisNumber].Decel
+        end
+
+      else if n=3 then
+        begin
+        try
+          T3[ht_DRef.AxisNumber].SetDecel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T3[ht_DRef.AxisNumber].Decel
+        end
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        begin
+        try
+          T4[ht_DRef.AxisNumber].SetDecel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T4[ht_DRef.AxisNumber].Decel
+        end
+
+      else if n=5 then
+        begin
+        try
+          T5[ht_DRef.AxisNumber].SetDecel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T5[ht_DRef.AxisNumber].Decel
+        end
+
+      else if n=6 then
+        begin
+        try
+          T6[ht_DRef.AxisNumber].SetDecel(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T6[ht_DRef.AxisNumber].Decel
+        end
+{$ENDIF}
+     else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+48
+Procedure bk_de;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigP then
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].DestinationPosition      
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);        
+    if NextChar=AsciiCode.BigP then 
+      begin
+      if n=2 then
+        ht_DRef.Value:=T2[ht_DRef.AxisNumber].DestinationPosition
+      else if n=3 then
+        ht_DRef.Value:=T3[ht_DRef.AxisNumber].DestinationPosition
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        ht_DRef.Value:=T4[ht_DRef.AxisNumber].DestinationPosition
+      else if n=5 then
+        ht_DRef.Value:=T5[ht_DRef.AxisNumber].DestinationPosition
+      else if n=6 then
+        ht_DRef.Value:=T6[ht_DRef.AxisNumber].DestinationPosition
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+80
+Procedure bk_dl;
+
+  var NextChar:integer;
+  var n:integer;
+  var StartOffset:longint;
+  var Offset:longint;
+  var DoneWithDownload:boolean;
+  var NewByte:integer;
+  var ErrorCounter:longint;
+  var HiNibble:integer;
+  var LowNibble:integer;
+  var scanner:longint;
+  var AutostartAddress:longint;
+  var CompareCheck:boolean;
+
+  begin
+ { CompareCheck:=false;
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigD then    
+    begin
+    StartOffset:=NextLong;
+    AutostartAddress:=NextLong+$20000000;
+    Offset:=StartOffset;
+    DoneWithDownload:=false;
+    ErrorCounter:=0;
+    repeat
+      while not Comm.CharacterPresent do
+        yield;
+      while Comm.CharacterPresent do
+        begin
+        NextChar:=Comm.GetCharacter;
+        if NextChar=37 then
+          DoneWithDownload:=true
+        else if (NextChar=32) or (NextChar=13) or (NextChar=10) then
+          begin
+
+          end
+        else
+          begin
+          HiNibble:=CharToHex(NextChar);
+          while not Comm.CharacterPresent do
+            yield;
+          NextChar:=Comm.GetCharacter;
+          LowNibble:=CharToHex(NextChar);
+          NewByte:=HiNibble*16+LowNibble;
+          if CompareCheck then
+            begin
+            if (Server.MemReadByte($2000,Offset) and $FF) <> NewByte then
+              begin
+              Prompter.writeln('Current: ',Server.MemReadByte($2000,Offset),' ',NewByte);
+              ErrorCounter:=ErrorCounter+1;
+              end;
+            end
+          else
+            Server.MemWriteByte($3000,Offset,NewByte);
+          Offset:=Offset+1;
+          end;
+        end;
+    until DoneWithDownload;    
+      
+    if not FlashMemory.IsErased then           
+      FlashMemory.Erase       
+    FlashMemory.WriteHeader(AutostartAddress); 
+    FlashMemory.FlashReset;
+  
+    for scanner:=$20 to StartOffset do      
+      FlashMemory.ProgramByte($8000,scanner,Server.MemReadByte($2000,scanner));          
+
+    for scanner:=StartOffset+1 to $FFFF do
+      FlashMemory.ProgramByte($8000,scanner,Server.MemReadByte($3000,scanner));
+
+    FlashMemory.FlashReset;   
+    ht_Dref.Value:=1;
+    end
+  else
+    GrammarError;}
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+23
+Procedure bk_ds;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigP then       
+      GroupInitialized[n]:=false
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+35
+Procedure bk_en;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigA then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetEnable(NextBoolean)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].EnableIsOn);
+      end
+    else if NextChar=AsciiCode.BigP then
+      begin {ENP}
+      try                
+        Axis[ht_DRef.AxisNumber].SetEncoderPosition(NextDouble)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].EncoderPosition
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+28
+Procedure bk_ga;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigI then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetGain(NextLong)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].Gain
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+13
+Procedure bk_hm;
+
+  var NextChar:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+ { if NextChar=AsciiCode.BigX then
+    BeginTask(TaskAddr(HomeX))
+  else
+    GrammarError;}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+90
+Procedure bk_in;
+
+  var NextChar:integer;
+  var n:integer;
+  var Dimension:integer;
+  var M:array[1..6] of integer;
+  var M1,M2,M3,M4,M5,M6:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigI then
+    begin
+    if ht_DRef.AxisTokenKind <> tk_TNAxis then
+      Escape(Error.CoordinatedGroupRequired);    
+
+    Dimension:=0;
+    while InspectToken.Kind=tk_Literal do
+      begin
+      Dimension:=Dimension+1;
+      if Dimension > 6 then
+        Escape(Error.TooManyParameters);
+      M[Dimension]:=NextLong;
+      end;
+
+    if Dimension < 2 then
+      Escape(Error.TooFewParameters);
+
+    ht_DRef.Value:=Dimension;
+    GroupDimensionArray[ht_DRef.AxisNumber]:=Dimension;
+
+    M1:=M[1]; {nested array references not allowed}
+    M2:=M[2];
+    M3:=M[3];
+    M4:=M[4];
+    M5:=M[5];
+    M6:=M[6];
+
+    if Dimension=2 then
+      begin
+      T2[ht_DRef.AxisNumber].Init(Axis[M1],Axis[M2]);
+      T2[ht_DRef.AxisNumber].SetCountsPerUserUnit(MaxDouble(Axis[M1].CountsPerUserUnit,Axis[M2].CountsPerUserUnit));
+      end
+    else if Dimension=3 then
+      begin
+      T3[ht_DRef.AxisNumber].Init(Axis[M1],Axis[M2],Axis[M3]);
+      T3[ht_DRef.AxisNumber].SetCountsPerUserUnit(
+        MaxDouble(MaxDouble(Axis[M1].CountsPerUserUnit,Axis[M2].CountsPerUserUnit),Axis[M3].CountsPerUserUnit));
+      end
+{$IFDEF MoreThan3Axes}
+    else if Dimension=4 then
+      begin
+      T4[ht_DRef.AxisNumber].Init(Axis[M1],Axis[M2],Axis[M3],Axis[M4]);
+      T4[ht_DRef.AxisNumber].SetCountsPerUserUnit(
+        MaxDouble(MaxDouble(
+          MaxDouble(Axis[M1].CountsPerUserUnit,Axis[M2].CountsPerUserUnit),Axis[M3].CountsPerUserUnit),Axis[M4].CountsPerUserUnit));
+      end
+
+    else if Dimension=5 then
+      begin
+      T5[ht_DRef.AxisNumber].init(Axis[M1],Axis[M2],Axis[M3],Axis[M4],Axis[M5])
+      T5[ht_DRef.AxisNumber].SetCountsPerUserUnit(
+        MaxDouble(MaxDouble(MaxDouble(MaxDouble(
+          Axis[M1].CountsPerUserUnit,Axis[M2].CountsPerUserUnit),Axis[M3].CountsPerUserUnit),Axis[M4].CountsPerUserUnit),Axis[M5].CountsPerUserUnit));
+      end
+    else if Dimension=6 then
+      begin
+      T6[ht_DRef.AxisNumber].init(Axis[M1],Axis[M2],Axis[M3],Axis[M4],Axis[M5],Axis[M6])
+      T6[ht_DRef.AxisNumber].SetCountsPerUserUnit(
+        MaxDouble(MaxDouble(MaxDouble(MaxDouble(MaxDouble(
+          Axis[M1].CountsPerUserUnit,Axis[M2].CountsPerUserUnit),Axis[M3].CountsPerUserUnit),
+          Axis[M4].CountsPerUserUnit),Axis[M5].CountsPerUserUnit),Axis[M6]].CountsPerUserUnit));
+      end
+{$ENDIF}
+    else
+      Escape(Error.Assertion);
+
+    GroupInitialized[ht_Dref.AxisNumber]:=true;
+    end
+
+  else if NextChar=AsciiCode.BigB then
+    ht_DRef.Value:=BooleanToInteger(
+      InputBit(IntegerConfineBetween(
+        NextLong,1,48,ParameterOutOfRangeEscapeCode)))
+
+  else
+    GrammarError;
+ 
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+20
+Procedure bk_is;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigO then    
+    IsoIO.SetOutputBit(
+      IntegerConfineBetween(NextLong,1,8,ParameterOutOfRangeEscapeCode),
+      NextBoolean)
+  else if NextChar=AsciiCode.BigI then
+    ht_DRef.Value:=BooleanToInteger(
+      IsoIO.InputBit(IntegerConfineBetween(
+        NextLong,1,18,ParameterOutOfRangeEscapeCode)))
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+28
+Procedure bk_it;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigG then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetIntegrator(NextLong)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].Integrator
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+24
+Procedure bk_jo;
+
+  var NextChar:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigG then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].Jog(NextSingleAssignmentPermitted)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].Speed
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+25
+Procedure bk_li;
+
+  var NextChar:integer;
+ 
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigV then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetLoopInversion(NextBoolean)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].LoopInversionIsOn);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+36
+Procedure bk_ln;
+
+  var NextChar:integer;
+  var BufferNumber:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_TNAxis then   
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);        
+    BufferNumber:=GetNextCurveBufferNumber;
+    if BufferNumber=0 then
+      Escape(Error.OutOfCurveBuffers);
+    ht_DRef.Value:=BufferNumber;
+    if NextChar=AsciiCode.BigK then
+      begin 
+      if n=2 then
+        begin
+        if BufferNumber=1 then
+          T2[ht_DRef.AxisNumber].LinkTo(CurveBuffer1)
+        else
+          T2[ht_DRef.AxisNumber].LinkTo(CurveBuffer2);
+        end
+      else
+        Escape(Error.IllegalDimension)
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+57
+Procedure bk_ma;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    if NextChar=AsciiCode.BigC then
+      begin
+      if n=2 then
+        begin
+        T2[ht_DRef.AxisNumber].BeginMoveAlongCurve;
+        while not T2[ht_DRef.AxisNumber].MoveIsFinished do
+          yield;
+        end
+      else if n=3 then
+        begin
+        T3[ht_Dref.AxisNumber].BeginMoveAlongCurve
+        while not T3[ht_DRef.AxisNumber].MoveIsFinished do
+          yield;
+        end
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        begin
+        T4[ht_Dref.AxisNumber].BeginMoveAlongCurve
+        while not T4[ht_DRef.AxisNumber].MoveIsFinished do
+          yield;
+        end
+      else if n=5 then
+        begin
+        T5[ht_DRef.AxisNumber].BeginMoveAlongCurve
+        while not T5[ht_DRef.AxisNumber].MoveIsFinished do
+          yield;
+        end
+      else if n=6 then
+        begin
+        T6[ht_Dref.AxisNumber].BeginMoveAlongCurve
+        while not T6[ht_DRef.AxisNumber].MoveIsFinished do
+          yield;
+        end
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+48
+Procedure bk_mi;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+  const InPositionTolerance=5;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigF then
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].MoveIsFinished)      
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);        
+    if NextChar=AsciiCode.BigF then 
+      begin
+      if n=2 then
+        ht_DRef.Value:=BooleanToInteger(T2[ht_DRef.AxisNumber].MoveIsFinished)
+      else if n=3 then
+        ht_DRef.Value:=BooleanToInteger(T3[ht_DRef.AxisNumber].MoveIsFinished)
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        ht_DRef.Value:=BooleanToInteger(T4[ht_DRef.AxisNumber].MoveIsFinished)
+      else if n=5 then
+        ht_DRef.Value:=BooleanToInteger(T5[ht_DRef.AxisNumber].MoveIsFinished)
+      else if n=6 then
+        ht_DRef.Value:=BooleanToInteger(T6[ht_DRef.AxisNumber].MoveIsFinished)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+96
+Procedure bk_mt;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigR then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetMotor(NextBoolean)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=BooleanToInteger(Axis[ht_DRef.AxisNumber].MotorIsOn)
+      end
+    else if NextChar=AsciiCode.BigT then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetMotorType(NextLong)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].MotorType;
+      end
+        
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    if NextChar=AsciiCode.BigR then 
+      begin
+      if n=2 then
+        begin
+        try
+          T2[ht_DRef.AxisNumber].SetMotor(NextBoolean)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=BooleanToInteger(T2[ht_DRef.AxisNumber].MotorIsOn);
+        end
+
+      else if n=3 then
+        begin
+        try
+          T3[ht_DRef.AxisNumber].SetMotor(NextBoolean)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=BooleanToInteger(T3[ht_DRef.AxisNumber].MotorIsOn);
+        end
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        begin
+        try
+          T4[ht_DRef.AxisNumber].SetMotor(NextBoolean)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=BooleanToInteger(T4[ht_DRef.AxisNumber].MotorIsOn);
+        end
+
+      else if n=5 then
+        begin
+        try
+          T5[ht_DRef.AxisNumber].SetMotor(NextBoolean)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=BooleanToInteger(T5[ht_DRef.AxisNumber].MotorIsOn);
+        end
+
+      else if n=6 then
+        begin
+        try
+          T6[ht_DRef.AxisNumber].SetMotor(NextBoolean)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=BooleanToInteger(T6[ht_DRef.AxisNumber].MotorIsOn);
+        end
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+76
+Procedure bk_mv;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigB then {bmb}
+      Axis[ht_DRef.AxisNumber].MoveBy(NextDouble)
+
+    else if NextChar=AsciiCode.BigT then {bmt}
+      Axis[ht_DRef.AxisNumber].MoveTo(NextDouble)
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    if NextChar=AsciiCode.BigB then {relative move}
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].MoveBy(
+          NextDouble,NextDouble)
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].MoveBy(
+          NextDouble,NextDouble,NextDouble)
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].MoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].MoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=6 then
+        begin
+        T6[ht_Dref.AxisNumber].BeginMoveBy(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+        while not T6[ht_DRef.AxisNumber].MoveIsFinished do
+          yield;
+        end
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else if NextChar=AsciiCode.BigT then {absolute move}
+      begin
+      if n=2 then
+        T2[ht_DRef.AxisNumber].MoveTo(
+          NextDouble,NextDouble)
+      else if n=3 then
+        T3[ht_Dref.AxisNumber].MoveTo(
+          NextDouble,NextDouble,NextDouble)
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_Dref.AxisNumber].MoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].MoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+      else if n=6 then
+        T6[ht_Dref.AxisNumber].MoveTo(
+          NextDouble,NextDouble,NextDouble,NextDouble,NextDouble,NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+77
+Procedure bk_nl;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigT then
+      begin {ACP}
+      try                
+        Axis[ht_DRef.AxisNumber].SetNegativeLimit(NextDouble)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].NegativeLimit
+      end
+        
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    if NextChar=AsciiCode.BigT then 
+      begin      
+      if n=2 then            
+        T2[ht_DRef.AxisNumber].SetNegativeLimit(
+          NextDouble,
+          NextDouble)                 
+
+      else if n=3 then
+        T3[ht_DRef.AxisNumber].SetNegativeLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble)        
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_DRef.AxisNumber].SetNegativeLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].SetNegativeLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+
+      else if n=6 then
+        T6[ht_DRef.AxisNumber].SetNegativeLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+77
+Procedure bk_pl;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigT then
+      begin {ACP}
+      try                
+        Axis[ht_DRef.AxisNumber].SetPositiveLimit(NextDouble)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].PositiveLimit
+      end
+        
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    if NextChar=AsciiCode.BigT then 
+      begin      
+      if n=2 then            
+        T2[ht_DRef.AxisNumber].SetPositiveLimit(
+          NextDouble,
+          NextDouble)                 
+
+      else if n=3 then
+        T3[ht_DRef.AxisNumber].SetPositiveLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble)        
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        T4[ht_DRef.AxisNumber].SetPositiveLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].SetPositiveLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+
+      else if n=6 then
+        T6[ht_DRef.AxisNumber].SetPositiveLimit(
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble,
+          NextDouble)
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+19
+Procedure bk_pu;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then
+    begin
+    n:=ValidUserTaskNumber(nextLong);
+    ht_DRef.Value:=n;
+    SuspendTask(UserTask[n])
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+15
+Procedure bk_rs;
+
+  var NextChar:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigA then
+    ResetAllocation
+  else if NextChar=AsciiCode.BigW then
+    ResetWatchdog
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+19
+Procedure bk_ru;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then
+    begin
+    n:=ValidUserTaskNumber(nextLong);
+    ht_DRef.Value:=n;
+    ResumeTask(UserTask[n])
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+54
+Procedure bk_sc;
+
+  var NextChar:integer;
+  var n:integer;
+  var NextState:boolean;
+  var Value:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then
+    begin
+    NextState:=false;
+    if NextChar=AsciiCode.BigB then
+      begin {SCB}
+      GrammarError;
+{      try
+        begin
+        NextState:=NextBoolean;
+        Axis[ht_DRef.AxisNumber].SetCompareBit(NextState);
+        end
+      recover
+        ConfirmNoExpression;
+      ht_DRef.Value:=BooleanToInteger(NextState);}
+      end
+    else if NextChar=AsciiCode.BigS then
+      begin {SCS}
+      try
+        begin
+        Value:=NextLong;
+        Axis[ht_DRef.AxisNumber].SetCaptureSource(Value);
+        end
+      recover
+        ConfirmNoExpression;
+      ht_DRef.Value:=Value;
+      end
+    else if NextChar=AsciiCode.BigT then
+      begin {SCT}
+      try
+        begin
+        NextState:=NextBoolean;
+        Axis[ht_DRef.AxisNumber].SetCaptureTrip(NextState);
+        end
+      recover
+        ConfirmNoExpression;
+      ht_DRef.Value:=BooleanToInteger(NextState);
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+22
+Procedure bk_so;
+
+  var NextChar:integer;
+  var n:integer;
+  var BooleanParam:boolean;
+  var Index:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigB then    
+    begin
+    Index:=IntegerConfineBetween(NextLong,1,12,ParameterOutOfRangeEscapeCode);
+    BooleanParam:=NextBoolean;
+    SetOutputBit(Index,BooleanParam);
+    ht_Dref.Value:=BooleanToInteger(BooleanParam);
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+98
+Procedure bk_sp;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+  if ht_DRef.AxisTokenKind=tk_T1Axis then
+    begin
+    if NextChar=AsciiCode.BigD then
+      begin {SPD}
+      try
+        begin
+        Axis[ht_DRef.AxisNumber].SetSpeed(NextSingleAssignmentPermitted)
+        end
+      recover
+        ConfirmNoExpression;
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].Speed
+      end
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);
+    if NextChar=AsciiCode.BigD then
+      begin
+      if n=2 then
+        begin
+        try
+          T2[ht_DRef.AxisNumber].SetSpeed(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T2[ht_DRef.AxisNumber].Speed
+        end
+
+      else if n=3 then
+        begin
+        try
+          T3[ht_DRef.AxisNumber].SetSpeed(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T3[ht_DRef.AxisNumber].Speed
+        end
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        begin
+        try
+          T4[ht_DRef.AxisNumber].SetSpeed(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T4[ht_DRef.AxisNumber].Speed
+        end
+
+      else if n=5 then
+        begin
+        try
+          T5[ht_DRef.AxisNumber].SetSpeed(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T5[ht_DRef.AxisNumber].Speed
+        end
+
+      else if n=6 then
+        begin
+        try
+          T6[ht_DRef.AxisNumber].SetSpeed(NextSingleAssignmentPermitted)
+        recover
+          ConfirmNoExpression;
+        ht_DRef.Value:=T6[ht_DRef.AxisNumber].Speed
+        end
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    begin
+    if NextChar=AsciiCode.BigC then
+      ht_DRef.Value:=SampleCounter
+
+    else if NextChar=AsciiCode.BigR then
+      begin
+      try
+        SetSampleRate(NextLong)
+      recover
+        ConfirmNoExpression;
+      ht_DRef.Value:=SampleRate
+      end
+    end;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+49
+Procedure bk_st;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigP then
+      begin {ABT}      
+      Axis[ht_DRef.AxisNumber].Stop;
+      ht_DRef.Value:=1;
+      end
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);    
+    ht_DRef.Value:=n;
+    if NextChar=AsciiCode.BigP then 
+      begin
+      if n=2 then            
+        T2[ht_DRef.AxisNumber].Stop        
+      else if n=3 then
+        T3[ht_DRef.AxisNumber].Stop  
+{$IFDEF MoreThan3Axes}      
+      else if n=4 then
+        T4[ht_DRef.AxisNumber].Stop        
+      else if n=5 then
+        T5[ht_DRef.AxisNumber].Stop
+      else if n=6 then
+        T6[ht_DRef.AxisNumber].Stop
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+19
+Procedure bk_su;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then
+    begin
+    n:=ValidUserTaskNumber(nextLong);
+    ht_DRef.Value:=n;
+    ScheduleTask(UserTask[n],NextLong)
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+36
+Procedure bk_tr;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigQ then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetCommandedTorque(NextLong)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].CommandedTorque
+      end
+
+{$IFDEF Closed_Loop}
+    else if NextChar=AsciiCode.BigS then
+      begin 
+      ht_DRef.Value:=NextDouble;
+      Closed_Loop.Set_Tracking_Speed(Axis[ht_Dref.AxisNumber],ht_Dref.Value);
+      end
+{$ENDIF}
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+15
+Procedure bk_uh;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigD then    
+    ht_DRef.Value:=BooleanToInteger(UserHasDisabled)
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+43
+Procedure bk_us;
+
+  var NextChar:integer;
+  var Index:integer;  
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigB then    
+    begin
+    Index:=IntegerConfineBetween(NextLong,1,MaxUserBooleans,ParameterOutOfRangeEscapeCode);
+    try
+      UserBoolean[Index]:=NextBoolean
+    recover
+      ConfirmNoExpression;
+    ht_DRef.Value:=BooleanToInteger(UserBoolean[Index]);
+    end
+
+  else if NextChar=AsciiCode.BigL then    
+    begin
+    Index:=IntegerConfineBetween(NextLong,1,MaxUserLongints,ParameterOutOfRangeEscapeCode);
+    try
+      UserLongint[Index]:=NextLong
+    recover
+      ConfirmNoExpression;
+    ht_DRef.Value:=UserLongint[Index];
+    end
+
+  else if NextChar=AsciiCode.BigN then    
+    begin
+    Index:=IntegerConfineBetween(NextLong,1,MaxUserNumbers,ParameterOutOfRangeEscapeCode);
+    try
+      UserNumber[Index]:=NextSingle
+    recover
+      ConfirmNoExpression;
+    ht_DRef.Value:=UserNumber[Index];
+    end
+
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+18
+Procedure bk_ut;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigP then
+    begin
+    n:=ValidUserTaskNumber(nextLong);    
+    ht_DRef.Value:=BooleanToInteger(TaskPresent(UserTask[n]));
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+15
+Procedure bk_wh;
+
+  var NextChar:integer;
+  var n:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigT then    
+    ht_DRef.Value:=BooleanToInteger(WatchdogHasTripped)
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+28
+Procedure bk_ze;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigO then
+      begin 
+      try                
+        Axis[ht_DRef.AxisNumber].SetZero(NextLong)
+      recover
+        ConfirmNoExpression;      
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].Zero
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+14
+procedure ByteToHexStringWithSpace(Value:integer);
+
+  var HighDigit:integer;
+  var LowDigit:integer;
+
+  begin  
+  Value:=Value and $FF;
+  HighDigit:=Value div $10;
+  LowDigit:=Value and $F;
+  StringAtPut(HexString,0,HexValueToCharacter(HighDigit));
+  StringatPut(HexString,1,HexValueToCharacter(LowDigit));
+  StringatPut(HexString,2,32);
+  StringAtPut(HexString,3,0);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+5
+Procedure ConfirmNoExpression;
+  begin
+  if EscapeCode <> Error.TooFewParameters then
+    Escape(EscapeCode);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+91
+procedure Expression(var Answer:double);
+
+  var NextAnswer:double;
+  var Ref:TDRef;
+  var Valid:boolean;
+
+  begin
+  Ref.Init;   
+  if InspectToken.Kind=tk_Nil then    
+    Escape(Error.TooFewParameters)
+
+  else if InspectToken.Kind=tk_Literal then
+    begin
+    Answer:=DoubleInString(InspectToken.Value);
+    Match(tk_Literal);        
+    end
+
+  else if InspectToken.Kind=tk_Word then
+    begin
+    if (InspectToken.Value='ON')
+    or (InspectToken.Value='HI') then
+      begin
+      Answer:=1
+      Match(tk_Word);
+      end
+    else if (InspectToken.Value='OFF')
+    or (InspectToken.Value='LOW') then
+      begin
+      Answer:=0
+      Match(tk_Word);
+      end
+    else if InspectToken.Value='STE' then      
+      begin
+      Answer:=StepperMotor
+      Match(tk_Word);
+      end
+    else if InspectToken.Value='SRV' then
+      begin
+      Answer:=ServoMotor;
+      Match(tk_Word);
+      end
+    else      
+      Answer:=PerformHashFunction(Ref);               
+    end
+
+  else if InspectToken.Kind=tk_T1Axis then
+    begin
+    Match(tk_T1Axis);
+    Ref.AxisTokenKind:=tk_T1Axis;
+    Ref.AxisNumber:=LongintConfineBetween(ArrayIndexExpression,1,16,Error.AxisNumberOutOfBounds);    
+    if InspectToken.Kind=tk_Word then
+      Answer:=PerformHashFunction(Ref);    
+    end
+
+  else if InspectToken.Kind=tk_TnAxis then
+    begin
+    Match(tk_TnAxis);
+    Ref.AxisTokenKind:=tk_TnAxis;
+    Ref.AxisNumber:=LongintConfineBetween(ArrayIndexExpression,1,MaxGroupNumber,Error.GroupNumberOutOfBounds);    
+    if InspectToken.Kind=tk_Word then
+      Answer:=PerformHashFunction(Ref);    
+    end
+
+  else if InspectToken.Kind=tk_LeftParen then
+    begin
+    Match(tk_LeftParen);
+    Expression(Answer);
+    Match(tk_RightParen);    
+    end
+  
+  else
+    GrammarError;
+
+  if InspectToken.IsAMathOperator then
+    begin    
+    if InspectToken.Kind=tk_PlusOp then      
+      begin      
+      Match(tk_PlusOp)     
+      Expression(NextAnswer);                   
+      Answer:=Answer+NextAnswer;
+      end
+    else if InspectToken.Kind=tk_MultiplyOp then      
+      begin      
+      Match(tk_MultiplyOp)     
+      Expression(NextAnswer);                   
+      Answer:=Answer*NextAnswer;
+      end
+    else
+      Escape(Error.TooFewParameters);
+    end  
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+Procedure GrammarError;
+  begin  
+  Escape(Error.Grammar);
+  end;
+TRUE
+TUserProcedure
+17 {reference}
+TRUE
+144
+Procedure Initialize;
+
+  var scanner:integer;
+
+  begin
+  Comm.Set_Communication_Properties;
+  ResetAllocation;
+  for scanner:=1 to MaxUserTasks do
+    UserTask[scanner]:=TaskAddr(NopTask);
+  yield;
+
+  for scanner:= 1 to MaxNamedProcedures do
+    begin
+    yield;
+    ProcedureName[scanner]:='';
+    end;
+
+  for scanner:=0 to 676 do
+    begin
+    HashProcedureArray[scanner]:=TaskAddr(PerformIllegalCommandEscape);
+    if (scanner and 15)=0 then
+      yield;
+    end;
+
+  for scanner:=1 to MaxUserLongints do
+    begin
+    UserLongint[scanner]:=0;
+    yield;
+    end;
+
+  for scanner:=1 to MaxUserNumbers do
+    begin
+    UserNumber[scanner]:=0;
+    yield;
+    end;
+
+  for scanner:=1 to MaxUserBooleans do
+    begin
+    UserBoolean[scanner]:=false;
+    yield;
+    end;
+
+  HashProcedureArray[HashIndexOfString('AB')]:=TaskAddr(bk_ab);
+  HashProcedureArray[HashIndexOfString('AC')]:=TaskAddr(bk_ac);
+  HashProcedureArray[HashIndexOfString('AI')]:=TaskAddr(bk_ai);
+  HashProcedureArray[HashIndexOfString('AL')]:=TaskAddr(bk_al);
+  HashProcedureArray[HashIndexOfString('AM')]:=TaskAddr(bk_am);
+  HashProcedureArray[HashIndexOfString('AN')]:=TaskAddr(bk_an);
+  HashProcedureArray[HashIndexOfString('AR')]:=TaskAddr(bk_ar);
+  HashProcedureArray[HashIndexOfString('AU')]:=TaskAddr(bk_au);
+  HashProcedureArray[HashIndexOfString('AX')]:=TaskAddr(bk_ax);
+  yield;
+  HashProcedureArray[HashIndexOfString('BM')]:=TaskAddr(bk_bm);
+  HashProcedureArray[HashIndexOfString('BN')]:=TaskAddr(bk_bn);
+  HashProcedureArray[HashIndexOfString('BS')]:=TaskAddr(bk_bs);
+  HashProcedureArray[HashIndexOfString('BU')]:=TaskAddr(bk_bu);
+  yield;
+  HashProcedureArray[HashIndexOfString('CA')]:=TaskAddr(bk_ca);
+  HashProcedureArray[HashIndexOfString('CH')]:=TaskAddr(bk_ch);
+  HashProcedureArray[HashIndexOfString('CI')]:=TaskAddr(bk_ci);
+  HashProcedureArray[HashIndexOfString('CL')]:=TaskAddr(bk_cl);
+  HashProcedureArray[HashIndexOfString('CO')]:=TaskAddr(bk_co);
+  HashProcedureArray[HashIndexOfString('CP')]:=TaskAddr(bk_cp);
+  yield;
+  HashProcedureArray[HashIndexOfString('DC')]:=TaskAddr(bk_dc);
+  HashProcedureArray[HashIndexOfString('DE')]:=TaskAddr(bk_de);
+  HashProcedureArray[HashIndexOfString('DL')]:=TaskAddr(bk_dl);
+  HashProcedureArray[HashIndexOfString('DS')]:=TaskAddr(bk_ds);
+  yield;
+  HashProcedureArray[HashIndexOfString('EI')]:=TaskAddr(bk_ei);
+  HashProcedureArray[HashIndexOfString('EN')]:=TaskAddr(bk_en);
+  HashProcedureArray[HashIndexOfString('ER')]:=TaskAddr(bk_er);
+  yield;
+  HashProcedureArray[HashIndexOfString('GA')]:=TaskAddr(bk_ga);
+  yield;
+  HashProcedureArray[HashIndexOfString('IN')]:=TaskAddr(bk_in);  
+  HashProcedureArray[HashIndexOfString('IS')]:=TaskAddr(bk_is);  
+  HashProcedureArray[HashIndexOfString('IT')]:=TaskAddr(bk_it);  
+  yield;
+  HashProcedureArray[HashIndexOfString('JO')]:=TaskAddr(bk_jo);  
+  yield;
+  HashProcedureArray[HashIndexOfString('LI')]:=TaskAddr(bk_li);  
+  HashProcedureArray[HashIndexOfString('LN')]:=TaskAddr(bk_ln);  
+  yield;
+  HashProcedureArray[HashIndexOfString('MA')]:=TaskAddr(bk_ma);  
+  HashProcedureArray[HashIndexOfString('MI')]:=TaskAddr(bk_mi);  
+  HashProcedureArray[HashIndexOfString('MT')]:=TaskAddr(bk_mt);  
+  HashProcedureArray[HashIndexOfString('MV')]:=TaskAddr(bk_mv);  
+  yield;
+  HashProcedureArray[HashIndexOfString('NL')]:=TaskAddr(bk_nl);  
+  yield;
+  HashProcedureArray[HashIndexOfString('PF')]:=TaskAddr(bk_pf);
+  HashProcedureArray[HashIndexOfString('PL')]:=TaskAddr(bk_pl);
+  HashProcedureArray[HashIndexOfString('PU')]:=TaskAddr(bk_pu);
+  yield;
+  HashProcedureArray[HashIndexOfString('RS')]:=TaskAddr(bk_rs);  
+  HashProcedureArray[HashIndexOfString('RU')]:=TaskAddr(bk_ru);  
+  HashProcedureArray[HashIndexOfString('RW')]:=TaskAddr(bk_rw);  
+  yield;
+  HashProcedureArray[HashIndexOfString('SC')]:=TaskAddr(bk_sc);  
+  HashProcedureArray[HashIndexOfString('SM')]:=TaskAddr(bk_sm);
+  HashProcedureArray[HashIndexOfString('SO')]:=TaskAddr(bk_so);
+  HashProcedureArray[HashIndexOfString('SP')]:=TaskAddr(bk_sp);
+  HashProcedureArray[HashIndexOfString('ST')]:=TaskAddr(bk_st);  
+  HashProcedureArray[HashIndexOfString('SU')]:=TaskAddr(bk_su);  
+  yield;
+  HashProcedureArray[HashIndexOfString('TR')]:=TaskAddr(bk_tr);  
+  yield;
+  HashProcedureArray[HashIndexOfString('UH')]:=TaskAddr(bk_uh);  
+  HashProcedureArray[HashIndexOfString('US')]:=TaskAddr(bk_us);  
+  HashProcedureArray[HashIndexOfString('UT')]:=TaskAddr(bk_ut);  
+  yield;
+  HashProcedureArray[HashIndexOfString('WH')]:=TaskAddr(bk_wh);  
+  yield;
+  HashProcedureArray[HashIndexOfString('ZE')]:=TaskAddr(bk_ze);  
+
+  HashProcedureArray[HashIndexOfString('HM')]:=TaskAddr(bk_hm);
+  
+  try
+    ResetWatchdog
+  recover
+    begin
+    {do not stop even if estopped}
+    end;
+
+  UserTask[1]:=TaskAddr(UserTask1);
+  UserTask[2]:=TaskAddr(UserTask2);
+  UserTask[3]:=TaskAddr(UserTask3);
+  UserTask[4]:=TaskAddr(UserTask4);
+  UserTask[5]:=TaskAddr(UserTask5);
+  UserTask[6]:=TaskAddr(UserTask6);
+  UserTask[7]:=TaskAddr(UserTask7);
+  UserTask[8]:=TaskAddr(UserTask8);
+  UserTask[9]:=TaskAddr(UserTask9);
+  UserTask[10]:=TaskAddr(UserTask10);
+  UserTask[11]:=TaskAddr(UserTask11);
+  UserTask[12]:=TaskAddr(UserTask12);
+  UserTask[13]:=TaskAddr(UserTask13);
+  UserTask[14]:=TaskAddr(UserTask14);
+  UserTask[15]:=TaskAddr(UserTask15);
+  UserTask[16]:=TaskAddr(UserTask16);
+
+  BeginTask(TaskAddr(MonitorCommPort));
+  end; 
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+35
+procedure LongintToNumberString(aNumber:longint);
+{-----------------------------------------------------------------------------------------}
+
+  var Digit:longint;
+  var Index:integer;    
+  const MinusSign=45;
+  var DigitHasBeenFound:boolean;
+  var Divisor:longint;
+
+  begin
+  Index:=0; 
+  
+  if aNumber < 0 then
+    begin    
+    aNumber:=abs(aNumber);
+    StringAtPut(NumberString,Index,MinusSign);
+    Index:=Index+1;
+    end 
+
+  Divisor:=1000000000;
+  DigitHasBeenFound:=false;
+  repeat
+    Divisor:=Divisor div 10;
+    Digit:=aNumber div Divisor
+    if (Digit > 0) or (Divisor=1) or DigitHasBeenFound then
+      begin    
+      StringAtPut(NumberString,Index,Digit+48);
+      Index:=Index+1;
+      aNumber:=aNumber-(Digit*Divisor);    
+      DigitHasBeenFound:=true;
+      end;
+  until Divisor=1;
+
+  StringAtPut(NumberString,Index,0);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+Procedure MissingParameter;
+  begin  
+  Escape(Error.TooFewParameters);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+103
+procedure MonitorCommPort;
+
+  var C:integer;
+  var Response:Double;
+  var TimeAnchor:longint;
+  const PrompterCharacter=62;
+  var Echo:boolean;
+  var Accumulator:string[100];
+  var Index:longint;
+
+  begin
+  Echo:=false;
+  Index:=0;
+  try
+  begin
+  while true do
+    begin
+    yield;
+    if Comm.CharacterPresent then
+      begin
+      C:=Comm.GetCharacter;
+      if C=13 then
+        begin
+        StringAtPut(Accumulator,Index,0);
+        if Echo then
+          begin
+          Comm.SendCharacter(C);
+          Comm.SendCharacter(10);
+          end;
+        try
+          begin
+          if Accumulator='' then
+            Response:=0
+          else
+            begin
+            TimeAnchor:=TimeRemaining;
+            Response:=InterpretCommand(Accumulator);
+            InterpreterElapsedTime:=TimeAnchor-TimeRemaining;
+            end;
+          Comm.SendCharacter(48); {0}
+          Comm.SendCharacter(32);
+          DoubleToString(Response,3,NumberString);
+          Comm.SendString(NumberString);
+          Comm.SendCharacter(32);
+          Comm.SendCharacter(StringAt('>',0));
+          end
+        recover
+          begin
+          LongintToNumberString(EscapeCode);
+          Comm.SendString(NumberString);
+          Comm.SendCharacter(32);
+          Comm.SendCharacter(StringAt('>',0));
+
+          {Although this looks like a good idea, creating a different error response creates more confusion than value}
+
+          {if EscapeCode=Error.Grammar then
+            begin
+            Comm.SendCharacter(32);
+            LongintToNumberString(CommandIndex);
+            Comm.SendString(NumberString);
+            end;}
+          end;
+        if Echo then
+          begin
+          Comm.SendCharacter(13);
+          Comm.SendCharacter(10);
+          end;
+        Index:=0;
+        end
+      else if C=8 then
+        begin
+        Index:=Index-1;
+        if Index >= 0 then
+          begin
+          if Echo then
+            begin
+            Comm.SendCharacter(8);
+            Comm.SendCharacter(32);
+            Comm.SendCharacter(8);
+            end;
+          end
+        else
+          Index:=0;
+        end
+      else if C=10 then
+        begin
+        {ignore incoming line feeds}
+        end
+      else
+        begin
+        StringAtPut(Accumulator,Index,C);
+        if Echo then
+          Comm.SendCharacter(C);
+        Index:=Index+1;
+        end;
+      end;
+    end;
+  end
+  recover
+    begin
+    {silent shutdown when no hardware present}
+    end;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+Procedure PerformIllegalCommandEscape;
+  begin
+  Escape(Error.UnknownCommand);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+12
+Procedure Publish(Address:pointer; var Name:string; Params:integer);
+
+  var Index:integer;
+
+  begin
+  Index:=IntegerConfineBetween(IndexAtName(''),
+    1,MaxNamedProcedures,Error.Assertion);
+  ProcedureName[Index]:=Name;
+  ProcedureAddress[Index]:=Address;
+  ProcedureParamCount[Index]:=
+    IntegerConfineBetween(Params,0,MaxParams,ParameterOutOfRangeEscapeCode);
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+12
+Procedure ResetAllocation;
+
+  var scanner:integer;
+
+  begin
+  for scanner:=1 to MaxGroupNumber do
+    begin
+    GroupInitialized:=false;
+    CurveBufferNumberForGroup[scanner]:=0; {nobody owns any buffers}      
+    yield;
+    end;
+  end;
+TRUE
+TUserVariable
+0 {reference}
+FALSE
+CurveBuffer1
+T3Vector
+TRUE
+200
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+CurveBuffer2
+T3Vector
+TRUE
+200
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+CurveBufferNumberForGroup
+Integer
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+GroupDimensionArray
+Integer
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+GroupInitialized
+Integer
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+HashProcedureArray
+Pointer
+TRUE
+676
+0
+0
+TUserVariable
+0 {reference}
+FALSE
+HexString
+String[63]
+FALSE
+10
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+NumberString
+String[63]
+FALSE
+10
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+Param
+single
+TRUE
+MaxParams
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+ProcedureName
+String[63]
+TRUE
+MaxNamedProcedures
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+ProcedureParamCount
+Integer
+TRUE
+MaxNamedProcedures
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+ReturnValue
+Single
+FALSE
+10
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+T2
+T2Axis
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+T3
+T3Axis
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+T4
+T4Axis
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+T5
+T5Axis
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+T6
+T6Axis
+TRUE
+MaxGroupNumber
+1
+0
+TUserVariable
+18 {reference}
+TRUE
+UserBoolean
+Boolean
+TRUE
+MaxUserBooleans
+1
+0
+TUserVariable
+19 {reference}
+TRUE
+UserLongint
+Longint
+TRUE
+MaxUserLongints
+1
+0
+TUserVariable
+20 {reference}
+TRUE
+UserNumber
+number
+TRUE
+MaxUserNumbers
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+UserTask
+Pointer
+TRUE
+MaxUserTasks
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+ProcedureAddress
+Pointer
+TRUE
+MaxNamedProcedures
+1
+0
+TUserType
+0 {reference}
+FALSE
+114
+Type TSupportTypes=record
+  x:longint;
+  end;
+
+var Error:Object
+  const Grammar=1001;
+  const UnknownCommand=1002;
+  const AxisNumberOutOfBounds=1003;
+  const GroupNumberOutOfBounds=1004;
+  const IllegalDimension=1005;
+  const GroupNotInitialized=1006;
+  const CoordinatedGroupRequired=1007;
+  const TooFewParameters=1008;
+  const TooManyParameters=1009;
+  const Assertion=1010;
+  const OutOfCurveBuffers=1011;
+  const UnableToFindNamedProcedure=1012;
+  end;
+
+var AsciiCode:Object
+    const BigA=65;
+    const BigB=66;
+    const BigC=67;
+    const BigD=68;
+    const BigE=69;
+    const BigF=70;
+    const BigG=71;
+    const BigH=72;
+    const BigI=73;
+    const BigJ=74;
+    const BigK=75;
+    const BigL=76;
+    const BigM=77;
+    const BigN=78;
+    const BigO=79;
+    const BigP=80;
+    const BigQ=81;
+    const BigR=82;
+    const BigS=83;
+    const BigT=84;
+    const BigU=85;
+    const BigV=86;
+    const BigW=87;
+    const BigX=88;
+    const BigY=89;
+    const BigZ=90;
+    const MinusSign=45;
+    const PlusSign=43;
+    const MultiplySign=42;
+    const LeftParen=40;
+    const RightParen=41;
+    const Period=46;
+    const Zero=48;
+    const Nine=57;
+    const SmallA=97;
+    const SmallZ=122;
+    const SmallAToBigAOffset=-32;
+    const Colon=58;
+    const LessThanSign=60;
+    const EqualsSign=61;
+    const GreaterThanSign=62;    
+    end;
+
+
+const tk_nil                 = 0;
+const tk_word                = 1; {general alpha that's not a predefined object type}
+const tk_T1Axis              = 2; {an isolated "A"}
+const tk_TNAxis              = 3; {an isolated "G"}
+const tk_Assignment          = 4;
+const tk_Literal             = 5;
+const tk_LessThanOrEqualTo   = 6;
+const tk_NotEqualTo          = 7;
+const tk_LessThan            = 8;
+const tk_GreaterThanOrEqualTo= 9;
+const tk_GreaterThan         =10;
+const tk_PlusOp              =11;
+const tk_MultiplyOp          =12;
+const tk_LeftParen           =13;
+const tk_RightParen          =14;
+const tk_Period              =15;
+
+Type TToken=object
+  Value:String[127];
+  Kind:integer;    
+
+  function IsAMathOperator:boolean;
+    begin
+    IsAMathOperator:=false;
+    if Kind=tk_PlusOp then
+      IsAMathOperator:=true
+    else if Kind=tk_MultiplyOp then
+      IsAMathOperator:=true;
+    end;
+  end;
+
+var InspectToken:TToken;
+
+
+Type TDRef=object
+
+  AxisTokenKind:integer;
+  AxisNumber:integer;
+  Value:double;
+
+  procedure Init;
+    begin
+    AxisTokenKind:=tk_Word;
+    AxisNumber:=1;    
+    Value:=0;
+    end;
+  end;
+
+var ht_DRef:TDRef;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+7
+procedure Match(aTokenKind:Integer);
+  begin
+  if aTokenKind <> InspectToken.Kind then
+    Escape(5000);
+  GetNextToken(CommandString,CommandIndex);
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+7
+procedure CommandInit(var ParamString:string);
+  begin
+  CommandIndex:=0;
+  CommandString:=ParamString;
+  GetNextToken(CommandString,CommandIndex);
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+7
+procedure Permit(aTokenKind:Integer);
+  begin
+  if aTokenKind = InspectToken.Kind then    
+    GetNextToken(CommandString,CommandIndex);
+  end;
+
+
+TRUE
+TUserVariable
+0 {reference}
+FALSE
+CommandString
+String[127]
+FALSE
+10
+1
+0
+TUserVariable
+0 {reference}
+FALSE
+CommandIndex
+Longint
+FALSE
+10
+1
+0
+TUserProcedure
+0 {reference}
+FALSE
+152
+Procedure GetNextToken(var Source:string; var scanner:integer);
+{--------------------------------------------------------------------------------}
+{ This routine seperates tokens in the command line and identifies multiple      }
+{ character groups into abstract tokens                                          }
+{________________________________________________________________________________}
+
+  var TokenScanner:integer;
+  var NextChar:integer;
+  var ScanDone:boolean;
+  var UpperChar:integer;
+
+  begin
+  SkipOverWhiteSpace(Source,scanner);
+
+  NextChar:=StringAt(source,scanner);   
+
+  if NextChar=AsciiCode.PlusSign then
+    begin
+    InspectToken.Kind:=tk_PlusOp;
+    scanner:=scanner+1;
+    exit;
+    end;
+
+  if NextChar=AsciiCode.MultiplySign then
+    begin
+    InspectToken.Kind:=tk_MultiplyOp;
+    scanner:=scanner+1;
+    exit;
+    end;
+
+  if IsPartOfANumber(NextChar) then
+    begin
+    TokenScanner:=0;
+    While IsPartOfANumber(NextChar) do
+      begin
+      StringAtPut(InspectToken.Value,TokenScanner,NextChar);
+      scanner:=scanner+1;
+      TokenScanner:=TokenScanner+1;
+      NextChar:=StringAt(Source,scanner);
+      end;
+    StringAtPut(InspectToken.Value,TokenScanner,0);
+    InspectToken.Kind:=tk_Literal;
+    exit;    
+    end
+
+  if NextChar=AsciiCode.Colon then
+    begin
+    scanner:=scanner+1;
+    NextChar:=StringAt(Source,scanner);
+    if NextChar=AsciiCode.EqualsSign then
+      begin
+      scanner:=scanner+1;
+      InspectToken.Kind:=tk_Assignment;
+      exit;
+      end
+    else
+      ScanningError(scanner);
+    end;
+      
+  if NextChar=AsciiCode.LessThanSign then
+    begin
+    scanner:=scanner+1;
+    NextChar:=StringAt(Source,scanner);
+    if NextChar=AsciiCode.EqualsSign then
+      begin
+      scanner:=scanner+1;
+      InspectToken.Kind:=tk_LessThanOrEqualTo;
+      exit;
+      end
+    else if NextChar=AsciiCode.GreaterThanSign then
+      begin
+      scanner:=scanner+1;
+      InspectToken.Kind:=tk_NotEqualTo;
+      exit;
+      end
+    else
+      begin
+      InspectToken.Kind:=tk_LessThan;
+      exit;
+      end;
+    end;
+
+  if NextChar=AsciiCode.GreaterThanSign then
+    begin
+    scanner:=scanner+1;
+    NextChar:=StringAt(Source,scanner);
+    if NextChar=AsciiCode.EqualsSign then
+      begin
+      scanner:=scanner+1;
+      InspectToken.Kind:=tk_GreaterThanOrEqualTo;
+      exit;
+      end
+    else
+      begin
+      InspectToken.Kind:=tk_GreaterThan;
+      exit;
+      end;
+    end;
+
+  if IsPartOfAWord(NextChar,UpperChar) then
+    begin    
+    TokenScanner:=0;    
+    InspectToken.Kind:=tk_Word; {possibly}
+    While IsPartOfAWord(NextChar,UpperChar) do      
+      begin
+      StringAtPut(InspectToken.Value,TokenScanner,UpperChar);
+      if TokenScanner=0 then
+        begin
+        if UpperChar=AsciiCode.BigA then
+          InspectToken.Kind:=tk_T1Axis {possibly}
+        else if UpperChar=AsciiCode.BigC then
+          InspectToken.Kind:=tk_TNAxis;
+        end;
+      TokenScanner:=TokenScanner+1;
+      scanner:=scanner+1;
+      NextChar:=StringAt(Source,scanner);
+      end;
+    StringAtPut(InspectToken.Value,TokenScanner,0);    
+    if TokenScanner <> 1 then
+      InspectToken.Kind:=tk_Word;
+    exit;
+    end;
+
+  if NextChar=AsciiCode.LeftParen then
+    begin
+    scanner:=scanner+1;
+    InspectToken.Kind:=tk_LeftParen;
+    exit;
+    end;
+
+  if NextChar=AsciiCode.RightParen then
+    begin
+    scanner:=scanner+1;
+    InspectToken.Kind:=tk_RightParen;
+    exit;
+    end;
+
+  if NextChar=0 then
+    begin
+    InspectToken.Kind:=tk_nil;
+    exit;
+    end;
+
+  if NextChar=AsciiCode.Period then
+    begin
+    InspectToken.Kind:=tk_Period;
+    exit;
+    end;
+
+  ScanningError(scanner);  
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+17
+Procedure SkipOverWhiteSpace(var Source:string; var scanner:integer);
+{--------------------------------------------------------------------------------}
+
+  var ScanDone:boolean;
+  var NextChar:integer;
+
+  begin
+  ScanDone:=false;
+  repeat
+    NextChar:=StringAt(Source,scanner);
+    if (NextChar=32)
+    or (NextChar=44) then
+      scanner:=scanner+1
+    else
+      ScanDone:=true;
+  until ScanDone;  
+  end;
+TRUE
+TUserFunction
+0 {reference}
+FALSE
+14
+Function IsPartOfANumber(CharOrd:integer):boolean;
+{--------------------------------------------------------------------------------}
+
+  begin
+  IsPartOfANumber:=true;
+  if CharOrd=AsciiCode.MinusSign then
+    exit; 
+  if CharOrd=AsciiCode.Period then
+    exit;
+  if (CharOrd >= AsciiCode.Zero)
+  and (CharOrd <= AsciiCode.Nine) then
+    exit;
+  IsPartOfANumber:=false;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+8
+Procedure ScanningError(column:integer);
+{--------------------------------------------------------------------------------}
+
+  begin
+  GlobalColumn:=column;
+  Escape(ScanningErrorEscapeCode);
+  end;
+
+TRUE
+TUserConstant
+0 {reference}
+FALSE
+ScanningErrorEscapeCode
+1000
+TUserFunction
+0 {reference}
+FALSE
+17
+Function IsPartOfAWord(CharOrd:integer; var UpperCaseChar:integer):boolean;
+{--------------------------------------------------------------------------------}
+
+  begin
+  IsPartOfAWord:=true;
+  UpperCaseChar:=CharOrd;
+  if (CharOrd >= AsciiCode.SmallA)
+  and (CharOrd <= AsciiCode.SmallZ) then
+    begin
+    UpperCaseChar:=CharOrd+AsciiCode.SmallAToBigAOffset;
+    exit;
+    end;
+  if (CharOrd >= AsciiCode.BigA)
+  and (CharOrd <= AsciiCode.BigZ) then
+    exit;
+  IsPartOfAWord:=false;
+  end;
+TRUE
+TUserVariable
+0 {reference}
+FALSE
+GlobalColumn
+Longint
+FALSE
+10
+1
+0
+TUserProcedure
+0 {reference}
+FALSE
+61
+Procedure DoubleToString(Value:double; NumberOfDecimalPlaces:integer; var Result:string);
+{version 3 , July 28}
+  var OffsetFactor:longint;
+  var Digit:longint;
+  var Index:integer;    
+  const MinusSign=45;
+  const DecimalPoint=46;
+  var DigitHasBeenFound:boolean;
+  var Divisor:longint;
+  var LongintValue:longint;
+  var scanner:integer;
+  var Anchor:longint;
+
+  begin
+  OffsetFactor:=1;
+  for scanner:=1 to NumberOfDecimalPlaces do
+    OffsetFactor:=OffsetFactor*10;
+
+  LongintValue:=round(OffsetFactor*Value);
+
+  Index:=0; 
+  
+  if LongintValue < 0 then
+    begin    
+    LongintValue:=abs(LongintValue);
+    StringAtPut(Result,Index,MinusSign);
+    Index:=Index+1;
+    end 
+
+  DigitHasBeenFound:=false;
+  if abs(Value) < 1 then
+    begin
+    Divisor:=OffsetFactor*10;
+    DigitHasBeenFound:=true
+    end
+  else
+    begin
+    Divisor:=10;
+    while Divisor <= LongintValue do
+      Divisor:=Divisor*100;
+    end;
+
+  repeat
+    Divisor:=Divisor div 10;
+    Digit:=LongintValue div Divisor
+    if (Digit > 0) or (Divisor=1) or DigitHasBeenFound then
+      begin    
+      StringAtPut(Result,Index,Digit+48);
+      Index:=Index+1;
+      LongintValue:=LongintValue-(Digit*Divisor);    
+      DigitHasBeenFound:=true;
+      end;
+    if Divisor=OffsetFactor then
+      begin
+      StringatPut(Result,Index,DecimalPoint);
+      Index:=Index+1;
+      end;
+  until Divisor=1;
+
+  StringAtPut(Result,Index,0);
+  end;
+TRUE
+TUserFunction
+0 {reference}
+FALSE
+8
+Function NextDouble:double;
+
+  var Answer:double;
+
+  begin  
+  Expression(Answer);  
+  NextDouble:=Answer;
+  end;
+TRUE
+TUserVariable
+21 {reference}
+TRUE
+InterpreterElapsedTime
+Longint
+FALSE
+10
+1
+0
+TUserProcedure
+0 {reference}
+FALSE
+81
+Procedure bk_cp;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then
+    begin
+    if NextChar=AsciiCode.BigU then
+      begin
+      try
+        Axis[ht_DRef.AxisNumber].SetCountsPerUserUnit(NextDouble)
+      recover
+        ConfirmNoExpression;
+      ht_Dref.Value:=Axis[ht_Dref.AxisNumber].CountsPerUserUnit;
+      end
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);
+    if NextChar=AsciiCode.BigU then {relative move}
+      begin
+      if n=2 then
+        begin
+        try
+          T2[ht_DRef.AxisNumber].SetCountsPerUserUnit(NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_Dref.Value:=T2[ht_Dref.AxisNumber].CountsPerUserUnit;
+        end
+      else if n=3 then
+        begin
+        try
+          T3[ht_DRef.AxisNumber].SetCountsPerUserUnit(NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_Dref.Value:=T3[ht_Dref.AxisNumber].CountsPerUserUnit;
+        end
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        begin
+        try
+          T4[ht_DRef.AxisNumber].SetCountsPerUserUnit(NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_Dref.Value:=T4[ht_Dref.AxisNumber].CountsPerUserUnit;
+        end
+      else if n=5 then
+        begin
+        try
+          T5[ht_DRef.AxisNumber].SetCountsPerUserUnit(NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_Dref.Value:=T5[ht_Dref.AxisNumber].CountsPerUserUnit;
+        end
+      else if n=6 then
+        begin
+        try
+          T6[ht_DRef.AxisNumber].SetCountsPerUserUnit(NextDouble)
+        recover
+          ConfirmNoExpression;
+        ht_Dref.Value:=T6[ht_Dref.AxisNumber].CountsPerUserUnit;
+        end
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError
+    end
+  else
+    GrammarError;
+  end;
+TRUE
+TUserFunction
+0 {reference}
+FALSE
+5
+Function NextDoubleAssignmentPermitted:double;
+  begin
+  Permit(tk_Assignment);
+  NextDoubleAssignmentPermitted:=NextDouble;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+29
+Procedure bk_er;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+{$IFDEF Closed_Loop}
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigS then
+      begin 
+      try
+        Closed_Loop.Set_Encoder_Resolution(Axis[ht_DRef.AxisNumber],NextLong)
+      recover
+        ConfirmNoExpression;
+      ht_DRef.Value:=Closed_Loop.EncoderResolution[ht_DRef.AxisNumber];
+      end
+    else
+      GrammarError;
+    end
+  else
+{$ENDIF}
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+26
+Procedure bk_ei;
+
+  var NextChar:integer;
+  var Parameter:boolean;
+ 
+  begin
+{$IFDEF Closed_Loop}
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then   
+    begin
+    if NextChar=AsciiCode.BigV then
+      begin 
+      Parameter:=NextBoolean;
+      Closed_Loop.Set_Encoder_Inversion(Axis[ht_DRef.AxisNumber],Parameter)
+      ht_DRef.Value:=BooleanToInteger(Parameter);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+{$ENDIF}
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+16
+Procedure bk_al;
+
+  var NextChar:integer;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigI then
+    begin {ALI}      
+    ht_DRef.Value:=AnalogInput(NextLong);
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+20
+Procedure bk_rw;
+
+  var NextChar:integer;
+  var n:integer;
+  var FoundTripped:boolean;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if NextChar=AsciiCode.BigD then
+    begin
+    FoundTripped:=WatchdogHasTripped;
+    ResetWatchDog;
+    ht_DRef.Value:=BooleanToInteger(FoundTripped);
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+TUserFunction
+0 {reference}
+FALSE
+5
+Function NextSingleAssignmentPermitted:single;
+  begin
+  Permit(tk_Assignment);
+  NextSingleAssignmentPermitted:=NextSingle;
+  end;
+TRUE
+TUserFunction
+0 {reference}
+FALSE
+7
+function MaxDouble(a:double;b:double):double;
+  begin
+  if a > b then
+    MaxDouble:=a
+  else
+    MaxDouble:=b;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+76
+Procedure bk_pf;
+
+  var NextChar:integer;
+  var n:integer;
+  var Valid:boolean;
+  var Param:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2); {third character}
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then
+    begin
+    if NextChar=AsciiCode.BigP then {ProFilePhase}
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].ProfilePhase
+
+    else if NextChar=AsciiCode.BigV then {ProFileVelocity}
+      ht_DRef.Value:=Axis[ht_DRef.AxisNumber].ProfileVelocity
+
+    else
+      GrammarError;
+    end
+
+  else if ht_DRef.AxisTokenKind=tk_TNAxis then
+    begin
+    n:=GroupDimension(ht_DRef.AxisNumber);
+    if NextChar=AsciiCode.BigP then
+      begin
+      if n=2 then
+        ht_DRef.Value:=T2[ht_DRef.AxisNumber].ProfilePhase
+
+      else if n=3 then
+        ht_DRef.Value:=T3[ht_DRef.AxisNumber].ProfilePhase
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        ht_DRef.Value:=T4[ht_DRef.AxisNumber].ProfilePhase
+
+      else if n=5 then
+        ht_DRef.Value:=T5[ht_DRef.AxisNumber].ProfilePhase
+
+      else if n=6 then
+        ht_DRef.Value:=T6[ht_DRef.AxisNumber].ProfilePhase
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+
+    else if NextChar=AsciiCode.BigV then
+      begin
+      if n=2 then
+        ht_DRef.Value:=T2[ht_DRef.AxisNumber].ProfileVelocity
+
+      else if n=3 then
+        ht_DRef.Value:=T3[ht_DRef.AxisNumber].ProfileVelocity
+
+{$IFDEF MoreThan3Axes}
+      else if n=4 then
+        ht_DRef.Value:=T4[ht_DRef.AxisNumber].ProfileVelocity
+
+      else if n=5 then
+        ht_DRef.Value:=T5[ht_DRef.AxisNumber].ProfileVelocity
+
+      else if n=6 then
+        ht_DRef.Value:=T6[ht_DRef.AxisNumber].ProfileVelocity
+{$ENDIF}
+      else
+        Escape(Error.IllegalDimension);
+      end
+    else
+      GrammarError;
+    end
+
+  else
+    GrammarError;
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+24
+Procedure bk_sm;
+
+  var NextChar:integer;
+  var Value:longint;
+
+  begin
+  NextChar:=StringAt(InspectToken.Value,2);
+  Match(tk_Word);
+
+  if ht_DRef.AxisTokenKind=tk_T1Axis then
+    begin
+    if NextChar=AsciiCode.BigS then {sms}
+      begin
+      Value:=NextLong;
+      SetMicrostepsPerStep(Axis[ht_DRef.AxisNumber],Value);
+      ht_DRef.Value:=Value;
+      end
+    else
+      GrammarError;
+    end
+  else
+    GrammarError;
+  end;
+
+TRUE
+-2134900736
+1
+
+FALSE
+0
+FALSE
+
 0
 -2134376448
 1
@@ -6492,7 +11793,7 @@ FALSE
 1
 FALSE
 http://google.com/
-0
+2
 1000
 FALSE
 3
