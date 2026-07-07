@@ -253,7 +253,7 @@ FALSE
  4.09600000000000E+0003
 0
 FALSE
-4
+9
 TNamedIO
 0 {reference}
 Output_1
@@ -286,12 +286,52 @@ BrakeDIO
 2
 FALSE
 0   {persistent index}
+TNamedIO
+0 {reference}
+PanLimit
+80
+1
+1
+TRUE
+0   {persistent index}
+TNamedIO
+0 {reference}
+TiltLimit
+80
+1
+3
+TRUE
+0   {persistent index}
+TNamedIO
+0 {reference}
+ZLimit
+80
+1
+4
+TRUE
+0   {persistent index}
+TNamedIO
+0 {reference}
+LightOnOff
+96
+2
+1
+FALSE
+0   {persistent index}
+TNamedIO
+0 {reference}
+LightBrightness
+112
+4
+1
+FALSE
+0   {persistent index}
 1
 TControlPlate
 1 {reference}
 Main
-25 40
-1235 565
+20 20
+1290 545
 -16777211
 Segoe UI
 1
@@ -414,57 +454,7 @@ FALSE
 TBlock
 0 {reference}
 0 {ReferenceLink}
-314 174 13921354 246 29
-5
-TStaticField
-0 {reference}
-9 14 9 14
-nil
-
-TRUE
-
-SetCurrent(T1Axis(
-T1AxisListField
-0 {reference}
-16 7 75 21
-nil
-
-TRUE
-X1_Motor
-X1_Motor
-0
-FALSE
-TStaticField
-0 {reference}
-78 7 163 21
-nil
-
-TRUE
-Set Current To 
-),
-TNumericField
-0 {reference}
-170 7 196 21
-nil
-Number
-TRUE
- 3.00000000000000E+0000
-TRUE
-TStaticField
-0 {reference}
-199 7 235 21
-nil
-
-TRUE
- Amps
-);
-TRUE
-TRUE
-FALSE
-TBlock
-0 {reference}
-0 {ReferenceLink}
-314 203 13921354 181 29
+314 174 13921354 181 29
 4
 TNAxisListField
 0 {reference}
@@ -506,57 +496,7 @@ FALSE
 TBlock
 0 {reference}
 0 {ReferenceLink}
-314 232 13921354 246 29
-5
-TStaticField
-0 {reference}
-9 14 9 14
-nil
-
-TRUE
-
-SetCurrent(T1Axis(
-T1AxisListField
-0 {reference}
-16 7 75 21
-nil
-
-TRUE
-X2_Motor
-X2_Motor
-0
-FALSE
-TStaticField
-0 {reference}
-78 7 163 21
-nil
-
-TRUE
-Set Current To 
-),
-TNumericField
-0 {reference}
-170 7 196 21
-nil
-Number
-TRUE
- 3.00000000000000E+0000
-TRUE
-TStaticField
-0 {reference}
-199 7 235 21
-nil
-
-TRUE
- Amps
-);
-TRUE
-TRUE
-FALSE
-TBlock
-0 {reference}
-0 {ReferenceLink}
-314 261 13921354 180 29
+314 203 13921354 180 29
 4
 TNAxisListField
 0 {reference}
@@ -598,57 +538,7 @@ FALSE
 TBlock
 0 {reference}
 0 {ReferenceLink}
-314 290 13921354 245 29
-5
-TStaticField
-0 {reference}
-9 14 9 14
-nil
-
-TRUE
-
-SetCurrent(T1Axis(
-T1AxisListField
-0 {reference}
-16 7 74 21
-nil
-
-TRUE
-Y1_Motor
-Y1_Motor
-0
-FALSE
-TStaticField
-0 {reference}
-77 7 162 21
-nil
-
-TRUE
-Set Current To 
-),
-TNumericField
-0 {reference}
-169 7 195 21
-nil
-Number
-TRUE
- 3.00000000000000E+0000
-TRUE
-TStaticField
-0 {reference}
-198 7 234 21
-nil
-
-TRUE
- Amps
-);
-TRUE
-TRUE
-FALSE
-TBlock
-0 {reference}
-0 {ReferenceLink}
-314 319 13921354 180 29
+314 232 13921354 180 29
 4
 TNAxisListField
 0 {reference}
@@ -690,57 +580,7 @@ FALSE
 TBlock
 0 {reference}
 0 {ReferenceLink}
-314 348 13921354 245 29
-5
-TStaticField
-0 {reference}
-9 14 9 14
-nil
-
-TRUE
-
-SetCurrent(T1Axis(
-T1AxisListField
-0 {reference}
-16 7 74 21
-nil
-
-TRUE
-Y2_Motor
-Y2_Motor
-0
-FALSE
-TStaticField
-0 {reference}
-77 7 162 21
-nil
-
-TRUE
-Set Current To 
-),
-TNumericField
-0 {reference}
-169 7 195 21
-nil
-Number
-TRUE
- 3.00000000000000E+0000
-TRUE
-TStaticField
-0 {reference}
-198 7 234 21
-nil
-
-TRUE
- Amps
-);
-TRUE
-TRUE
-FALSE
-TBlock
-0 {reference}
-0 {ReferenceLink}
-314 377 13921354 173 29
+314 261 13921354 173 29
 4
 TNAxisListField
 0 {reference}
@@ -782,57 +622,7 @@ FALSE
 TBlock
 0 {reference}
 0 {ReferenceLink}
-314 406 13921354 238 29
-5
-TStaticField
-0 {reference}
-9 14 9 14
-nil
-
-TRUE
-
-SetCurrent(T1Axis(
-T1AxisListField
-0 {reference}
-16 7 67 21
-nil
-
-TRUE
-Z_Motor
-Z_Motor
-0
-FALSE
-TStaticField
-0 {reference}
-70 7 155 21
-nil
-
-TRUE
-Set Current To 
-),
-TNumericField
-0 {reference}
-162 7 188 21
-nil
-Number
-TRUE
- 6.00000000000000E+0000
-TRUE
-TStaticField
-0 {reference}
-191 7 227 21
-nil
-
-TRUE
- Amps
-);
-TRUE
-TRUE
-FALSE
-TBlock
-0 {reference}
-0 {ReferenceLink}
-314 435 13921354 198 29
+314 290 13921354 198 29
 4
 TNAxisListField
 0 {reference}
@@ -874,57 +664,7 @@ FALSE
 TBlock
 0 {reference}
 0 {ReferenceLink}
-314 464 13921354 263 29
-5
-TStaticField
-0 {reference}
-9 14 9 14
-nil
-
-TRUE
-
-SetCurrent(T1Axis(
-T1AxisListField
-0 {reference}
-16 7 92 21
-nil
-
-TRUE
-Theta_Motor
-Theta_Motor
-0
-FALSE
-TStaticField
-0 {reference}
-95 7 180 21
-nil
-
-TRUE
-Set Current To 
-),
-TNumericField
-0 {reference}
-187 7 213 21
-nil
-Number
-TRUE
- 3.00000000000000E+0000
-TRUE
-TStaticField
-0 {reference}
-216 7 252 21
-nil
-
-TRUE
- Amps
-);
-TRUE
-TRUE
-FALSE
-TBlock
-0 {reference}
-0 {ReferenceLink}
-314 493 13921354 183 29
+314 319 13921354 183 29
 4
 TNAxisListField
 0 {reference}
@@ -963,102 +703,7 @@ TRUE
 TRUE
 TRUE
 FALSE
-TBlock
-0 {reference}
-0 {ReferenceLink}
-314 522 13921354 248 29
-5
-TStaticField
-0 {reference}
-9 14 9 14
 nil
-
-TRUE
-
-SetCurrent(T1Axis(
-T1AxisListField
-0 {reference}
-16 7 77 21
-nil
-
-TRUE
-Tilt_Motor
-Tilt_Motor
-0
-FALSE
-TStaticField
-0 {reference}
-80 7 165 21
-nil
-
-TRUE
-Set Current To 
-),
-TNumericField
-0 {reference}
-172 7 198 21
-nil
-Number
-TRUE
- 2.00000000000000E+0000
-TRUE
-TStaticField
-0 {reference}
-201 7 237 21
-nil
-
-TRUE
- Amps
-);
-TRUE
-TRUE
-FALSE
-TBlock
-0 {reference}
-5 {ReferenceLink}
-314 551 8388736 110 29
-2
-TPathNameField
-0 {reference}
-9 7 95 21
-nil
-
-TRUE
-ResetPositions
-Main.ResetPositions
-Main.
-ResetPositions
-TRUE
-TRUE
-TRUE
-TStaticField
-0 {reference}
-98 14 98 14
-nil
-
-TRUE
-
-;
-TRUE
-TRUE
-FALSE
-nil
-FALSE
-TRUE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
-FALSE
 FALSE
 FALSE
 FALSE
@@ -2116,15 +1761,473 @@ FALSE
 FALSE
 FALSE
 FALSE
-nil
-0 0  diagnostic marker
-a Title
-45
-TControlStatic
+TBlock_H
 0 {reference}
+0 {ReferenceLink}
+327 567 1993170 97 29
+1
+TStaticField
+0 {reference}
+9 7 90 21
+nil
+
+TRUE
+Autostart Last
+AutostartLast
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 596 3937500 158 29
+4
+TDigitalOutputListField
+0 {reference}
+13 7 78 21
+nil
+
+TRUE
+LightOnOff
+LightOnOff
+0
+TStaticField
+0 {reference}
+81 7 107 21
+nil
+
+TRUE
+Turn
+.Turn(
+TBooleanField
+0 {reference}
+114 7 149 21
+nil
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+152 14 152 14
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 625 13921354 246 29
+5
+TStaticField
+0 {reference}
+9 14 9 14
+nil
+
+TRUE
+
+SetCurrent(T1Axis(
+T1AxisListField
+0 {reference}
+16 7 75 21
+nil
+
+TRUE
+X1_Motor
+X1_Motor
+0
+FALSE
+TStaticField
+0 {reference}
+78 7 163 21
+nil
+
+TRUE
+Set Current To 
+),
+TNumericField
+0 {reference}
+170 7 196 21
+nil
+Number
+TRUE
+ 2.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+199 7 235 21
+nil
+
+TRUE
+ Amps
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 654 13921354 246 29
+5
+TStaticField
+0 {reference}
+9 14 9 14
+nil
+
+TRUE
+
+SetCurrent(T1Axis(
+T1AxisListField
+0 {reference}
+16 7 75 21
+nil
+
+TRUE
+X2_Motor
+X2_Motor
+0
+FALSE
+TStaticField
+0 {reference}
+78 7 163 21
+nil
+
+TRUE
+Set Current To 
+),
+TNumericField
+0 {reference}
+170 7 196 21
+nil
+Number
+TRUE
+ 2.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+199 7 235 21
+nil
+
+TRUE
+ Amps
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 683 13921354 245 29
+5
+TStaticField
+0 {reference}
+9 14 9 14
+nil
+
+TRUE
+
+SetCurrent(T1Axis(
+T1AxisListField
+0 {reference}
+16 7 74 21
+nil
+
+TRUE
+Y1_Motor
+Y1_Motor
+0
+FALSE
+TStaticField
+0 {reference}
+77 7 162 21
+nil
+
+TRUE
+Set Current To 
+),
+TNumericField
+0 {reference}
+169 7 195 21
+nil
+Number
+TRUE
+ 2.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+198 7 234 21
+nil
+
+TRUE
+ Amps
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 712 13921354 245 29
+5
+TStaticField
+0 {reference}
+9 14 9 14
+nil
+
+TRUE
+
+SetCurrent(T1Axis(
+T1AxisListField
+0 {reference}
+16 7 74 21
+nil
+
+TRUE
+Y2_Motor
+Y2_Motor
+0
+FALSE
+TStaticField
+0 {reference}
+77 7 162 21
+nil
+
+TRUE
+Set Current To 
+),
+TNumericField
+0 {reference}
+169 7 195 21
+nil
+Number
+TRUE
+ 2.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+198 7 234 21
+nil
+
+TRUE
+ Amps
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 741 13921354 238 29
+5
+TStaticField
+0 {reference}
+9 14 9 14
+nil
+
+TRUE
+
+SetCurrent(T1Axis(
+T1AxisListField
+0 {reference}
+16 7 67 21
+nil
+
+TRUE
+Z_Motor
+Z_Motor
+0
+FALSE
+TStaticField
+0 {reference}
+70 7 155 21
+nil
+
+TRUE
+Set Current To 
+),
+TNumericField
+0 {reference}
+162 7 188 21
+nil
+Number
+TRUE
+ 6.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+191 7 227 21
+nil
+
+TRUE
+ Amps
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 770 13921354 263 29
+5
+TStaticField
+0 {reference}
+9 14 9 14
+nil
+
+TRUE
+
+SetCurrent(T1Axis(
+T1AxisListField
+0 {reference}
+16 7 92 21
+nil
+
+TRUE
+Theta_Motor
+Theta_Motor
+0
+FALSE
+TStaticField
+0 {reference}
+95 7 180 21
+nil
+
+TRUE
+Set Current To 
+),
+TNumericField
+0 {reference}
+187 7 213 21
+nil
+Number
+TRUE
+ 2.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+216 7 252 21
+nil
+
+TRUE
+ Amps
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+327 799 13921354 258 29
+5
+TStaticField
+0 {reference}
+9 14 9 14
+nil
+
+TRUE
+
+SetCurrent(T1Axis(
+T1AxisListField
+0 {reference}
+16 7 77 21
+nil
+
+TRUE
+Tilt_Motor
+Tilt_Motor
+0
+FALSE
+TStaticField
+0 {reference}
+80 7 165 21
+nil
+
+TRUE
+Set Current To 
+),
+TNumericField
+0 {reference}
+172 7 208 21
+nil
+Number
+TRUE
+ 1.50000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+211 7 247 21
+nil
+
+TRUE
+ Amps
+);
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+5 {ReferenceLink}
+327 828 8388736 110 29
+2
+TPathNameField
+0 {reference}
+9 7 95 21
+nil
+
+TRUE
+ResetPositions
+Main.ResetPositions
+Main.
+ResetPositions
+TRUE
+TRUE
+TRUE
+TStaticField
+0 {reference}
+98 14 98 14
+nil
+
+TRUE
+
+;
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+TRUE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+-2 -117  diagnostic marker
+a Title
+58
+TControlStatic
+22 {reference}
 EncX1
-210 140
-365 194
+205 120
+360 174
 -16777211
 Segoe UI
 1
@@ -2208,8 +2311,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText
-45 80
-205 134
+40 60
+200 114
 -16777211
 Segoe UI
 1
@@ -2222,10 +2325,10 @@ nil
 Motor X1
 2
 TControlStatic
-0 {reference}
+23 {reference}
 MtrX1
-210 80
-365 134
+205 60
+360 114
 -16777211
 Segoe UI
 1
@@ -2309,8 +2412,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText2
-45 140
-205 194
+40 120
+200 174
 -16777211
 Segoe UI
 1
@@ -2323,10 +2426,10 @@ nil
 Enc X1
 2
 TControlStatic
-0 {reference}
+24 {reference}
 MtrY1
-210 200
-365 254
+205 180
+360 234
 -16777211
 Segoe UI
 1
@@ -2410,8 +2513,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText3
-45 200
-205 254
+40 180
+200 234
 -16777211
 Segoe UI
 1
@@ -2424,10 +2527,10 @@ nil
 Motor Y1
 2
 TControlStatic
-0 {reference}
+25 {reference}
 EncY1
-210 260
-365 314
+205 240
+360 294
 -16777211
 Segoe UI
 1
@@ -2511,8 +2614,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText4
-45 260
-205 314
+40 240
+200 294
 -16777211
 Segoe UI
 1
@@ -2527,8 +2630,8 @@ Enc Y1
 TControlStatic
 0 {reference}
 DefaultText5
-395 80
-555 134
+390 60
+550 114
 -16777211
 Segoe UI
 1
@@ -2541,10 +2644,10 @@ nil
 Motor X2
 2
 TControlStatic
-0 {reference}
+26 {reference}
 MtrX2
-560 80
-715 134
+555 60
+710 114
 -16777211
 Segoe UI
 1
@@ -2628,8 +2731,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText6
-395 140
-555 194
+390 120
+550 174
 -16777211
 Segoe UI
 1
@@ -2642,10 +2745,10 @@ nil
 Enc X2
 2
 TControlStatic
-0 {reference}
+27 {reference}
 EncX2
-560 140
-715 194
+555 120
+710 174
 -16777211
 Segoe UI
 1
@@ -2729,8 +2832,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText7
-395 200
-555 254
+390 180
+550 234
 -16777211
 Segoe UI
 1
@@ -2743,10 +2846,10 @@ nil
 Motor Y2
 2
 TControlStatic
-0 {reference}
+28 {reference}
 MtrY2
-560 200
-715 254
+555 180
+710 234
 -16777211
 Segoe UI
 1
@@ -2830,8 +2933,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText8
-395 260
-555 314
+390 240
+550 294
 -16777211
 Segoe UI
 1
@@ -2844,10 +2947,10 @@ nil
 Enc Y2
 2
 TControlStatic
-0 {reference}
+29 {reference}
 EncY2
-560 260
-715 314
+555 240
+710 294
 -16777211
 Segoe UI
 1
@@ -2929,10 +3032,10 @@ nil
 
 0
 TControlStatic
-0 {reference}
+30 {reference}
 EncPan
-210 380
-365 434
+205 360
+360 414
 -16777211
 Segoe UI
 1
@@ -3070,8 +3173,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText9
-35 320
-205 374
+30 300
+200 354
 -16777211
 Segoe UI
 1
@@ -3084,10 +3187,10 @@ nil
 Motor Pan
 2
 TControlStatic
-0 {reference}
+31 {reference}
 MtrPan
-210 320
-365 374
+205 300
+360 354
 -16777211
 Segoe UI
 1
@@ -3225,8 +3328,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText10
-45 380
-205 434
+40 360
+200 414
 -16777211
 Segoe UI
 1
@@ -3239,10 +3342,10 @@ nil
 Enc Pan
 2
 TControlStatic
-0 {reference}
+32 {reference}
 EncTilt
-560 380
-715 434
+555 360
+710 414
 -16777211
 Segoe UI
 1
@@ -3380,8 +3483,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText11
-395 320
-555 374
+390 300
+550 354
 -16777211
 Segoe UI
 1
@@ -3394,10 +3497,10 @@ nil
 Motor Tilt
 2
 TControlStatic
-0 {reference}
+33 {reference}
 MtrTilt
-560 320
-715 374
+555 300
+710 354
 -16777211
 Segoe UI
 1
@@ -3535,8 +3638,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText12
-395 380
-555 434
+390 360
+550 414
 -16777211
 Segoe UI
 1
@@ -3549,10 +3652,10 @@ nil
 Enc Tilt
 2
 TControlStatic
-0 {reference}
+34 {reference}
 EncZ
-385 500
-540 554
+205 480
+360 534
 -16777211
 Segoe UI
 1
@@ -3636,8 +3739,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText13
-220 440
-380 494
+40 420
+200 474
 -16777211
 Segoe UI
 1
@@ -3650,10 +3753,10 @@ nil
 Motor Z
 2
 TControlStatic
-0 {reference}
+35 {reference}
 MtrZ
-385 440
-540 494
+205 420
+360 474
 -16777211
 Segoe UI
 1
@@ -3737,8 +3840,8 @@ nil
 TControlStatic
 0 {reference}
 DefaultText14
-220 500
-380 554
+40 480
+200 534
 -16777211
 Segoe UI
 1
@@ -3753,8 +3856,8 @@ Enc Z
 TControlButton
 0 {reference}
 ZButton
-950 430
-1045 460
+945 410
+1040 440
 536870911
 Segoe UI
 1
@@ -4037,8 +4140,8 @@ FALSE
 TControlButton
 0 {reference}
 ZButton2
-950 465
-1045 495
+945 445
+1040 475
 536870911
 Segoe UI
 1
@@ -4076,7 +4179,7 @@ TRUE
 TBlock_H
 0 {reference}
 0 {ReferenceLink}
-411 178 1993170 89 29
+317 186 1993170 89 29
 1
 TStaticField
 0 {reference}
@@ -4089,10 +4192,77 @@ MouseDown
 FALSE
 TRUE
 FALSE
+TBlock_C
+0 {reference}
+0 {ReferenceLink}
+317 215 6333684 206 115
+3
+TStaticField
+0 {reference}
+9 11 28 25
+nil
+
+TRUE
+  If  
+If 
+TBooleanField
+0 {reference}
+31 7 161 30
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+348 222 3937500 130 23
+3
+TDigitalInputListField
+0 {reference}
+19 4 58 18
+nil
+
+TRUE
+ZLimit
+ZLimit
+0
+TStaticField
+0 {reference}
+61 4 71 18
+nil
+
+TRUE
+Is
+.Is
+TBooleanIsField
+0 {reference}
+78 4 114 18
+nil
+Boolean
+TRUE
+FALSE
+On
+Off
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+164 11 189 25
+nil
+
+TRUE
+then
+ then
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
 TBlock
 0 {reference}
 4 {ReferenceLink}
-411 207 8388736 118 29
+342 252 8388736 118 29
 2
 TPathNameField
 0 {reference}
@@ -4121,7 +4291,7 @@ FALSE
 TBlock
 0 {reference}
 0 {ReferenceLink}
-411 236 13921354 150 29
+342 281 13921354 150 29
 4
 T1AxisListField
 0 {reference}
@@ -4321,8 +4491,8 @@ FALSE
 TControlButton
 0 {reference}
 X1Button
-785 145
-880 175
+780 125
+875 155
 536870911
 Segoe UI
 1
@@ -4486,8 +4656,8 @@ FALSE
 TControlButton
 0 {reference}
 X1Button2
-885 145
-980 175
+880 125
+975 155
 536870911
 Segoe UI
 1
@@ -4651,8 +4821,8 @@ FALSE
 TControlButton
 0 {reference}
 Y1Button
-835 110
-930 140
+830 90
+925 120
 536870911
 Segoe UI
 1
@@ -4816,8 +4986,8 @@ FALSE
 TControlButton
 0 {reference}
 Y1Button2
-835 180
-930 210
+830 160
+925 190
 536870911
 Segoe UI
 1
@@ -4981,8 +5151,8 @@ FALSE
 TControlButton
 0 {reference}
 X2Button
-1015 145
-1110 175
+1010 125
+1105 155
 536870911
 Segoe UI
 1
@@ -5146,8 +5316,8 @@ FALSE
 TControlButton
 0 {reference}
 X2Button2
-1115 145
-1210 175
+1110 125
+1205 155
 536870911
 Segoe UI
 1
@@ -5311,8 +5481,8 @@ FALSE
 TControlButton
 0 {reference}
 Y2Button
-1065 110
-1160 140
+1060 90
+1155 120
 536870911
 Segoe UI
 1
@@ -5476,8 +5646,8 @@ FALSE
 TControlButton
 0 {reference}
 Y2Button2
-1065 180
-1160 210
+1060 160
+1155 190
 536870911
 Segoe UI
 1
@@ -5641,8 +5811,8 @@ FALSE
 TControlButton
 0 {reference}
 PanButton
-895 300
-990 330
+890 280
+985 310
 536870911
 Segoe UI
 1
@@ -5806,8 +5976,8 @@ FALSE
 TControlButton
 0 {reference}
 PanButton2
-995 300
-1090 330
+990 280
+1085 310
 536870911
 Segoe UI
 1
@@ -5971,8 +6141,8 @@ FALSE
 TControlButton
 0 {reference}
 TiltButton
-945 265
-1040 295
+940 245
+1035 275
 536870911
 Segoe UI
 1
@@ -6136,8 +6306,8 @@ FALSE
 TControlButton
 0 {reference}
 TiltButton2
-945 335
-1040 365
+940 315
+1035 345
 536870911
 Segoe UI
 1
@@ -6300,9 +6470,9 @@ Tilt-
 FALSE
 TControlButton
 0 {reference}
-BrakeButton
-1105 470
-1200 500
+X1ToggleButton
+720 125
+775 155
 536870911
 Segoe UI
 1
@@ -6340,7 +6510,7 @@ TRUE
 TBlock_H
 0 {reference}
 0 {ReferenceLink}
-392 273 1993170 60 29
+481 198 1993170 60 29
 1
 TStaticField
 0 {reference}
@@ -6355,8 +6525,1049 @@ TRUE
 FALSE
 TBlock
 0 {reference}
+0 {ReferenceLink}
+481 227 13921354 375 45
+4
+TNAxisListField
+0 {reference}
+13 15 72 29
+nil
+
+TRUE
+X1_Motor
+X1_Motor
+0
+TStaticField
+0 {reference}
+75 15 130 29
+nil
+
+TRUE
+Set Motor
+.SetMotor(
+TBooleanField
+0 {reference}
+133 7 358 38
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+614 234 1226588 225 31
+3
+TStaticField
+0 {reference}
+19 8 37 22
+nil
+
+TRUE
+not
+(not(
+TBooleanField
+0 {reference}
+40 4 202 27
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+654 238 13921354 162 23
+2
+TNAxisListField
+0 {reference}
+19 4 78 18
+nil
+
+TRUE
+X1_Motor
+X1_Motor
+0
+TStaticField
+0 {reference}
+81 4 146 18
+nil
+
+TRUE
+Motor Is On
+.MotorIsOn
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+205 15 205 15
+nil
+
+TRUE
+
+))
+Boolean
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+361 22 361 22
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+X1 Toggle
+FALSE
+TControlButton
+0 {reference}
+Y1ToggleButton2
+850 55
+905 85
+536870911
+Segoe UI
+1
+-16777208
+8
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+481 198 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+481 227 13921354 373 45
+4
+TNAxisListField
+0 {reference}
+13 15 71 29
+nil
+
+TRUE
+Y1_Motor
+Y1_Motor
+0
+TStaticField
+0 {reference}
+74 15 129 29
+nil
+
+TRUE
+Set Motor
+.SetMotor(
+TBooleanField
+0 {reference}
+132 7 356 38
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+613 234 1226588 224 31
+3
+TStaticField
+0 {reference}
+19 8 37 22
+nil
+
+TRUE
+not
+(not(
+TBooleanField
+0 {reference}
+40 4 201 27
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+653 238 13921354 161 23
+2
+TNAxisListField
+0 {reference}
+19 4 77 18
+nil
+
+TRUE
+Y1_Motor
+Y1_Motor
+0
+TStaticField
+0 {reference}
+80 4 145 18
+nil
+
+TRUE
+Motor Is On
+.MotorIsOn
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+204 15 204 15
+nil
+
+TRUE
+
+))
+Boolean
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+359 22 359 22
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+Y1 Toggle
+FALSE
+TControlButton
+0 {reference}
+Y2ToggleButton
+1080 55
+1135 85
+536870911
+Segoe UI
+1
+-16777208
+8
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+481 198 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+481 227 13921354 373 45
+4
+TNAxisListField
+0 {reference}
+13 15 71 29
+nil
+
+TRUE
+Y2_Motor
+Y2_Motor
+0
+TStaticField
+0 {reference}
+74 15 129 29
+nil
+
+TRUE
+Set Motor
+.SetMotor(
+TBooleanField
+0 {reference}
+132 7 356 38
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+613 234 1226588 224 31
+3
+TStaticField
+0 {reference}
+19 8 37 22
+nil
+
+TRUE
+not
+(not(
+TBooleanField
+0 {reference}
+40 4 201 27
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+653 238 13921354 161 23
+2
+TNAxisListField
+0 {reference}
+19 4 77 18
+nil
+
+TRUE
+Y2_Motor
+Y2_Motor
+0
+TStaticField
+0 {reference}
+80 4 145 18
+nil
+
+TRUE
+Motor Is On
+.MotorIsOn
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+204 15 204 15
+nil
+
+TRUE
+
+))
+Boolean
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+359 22 359 22
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+Y2 Toggle
+FALSE
+TControlButton
+0 {reference}
+X2ToggleButton
+1210 125
+1265 155
+536870911
+Segoe UI
+1
+-16777208
+8
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+481 198 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+481 227 13921354 375 45
+4
+TNAxisListField
+0 {reference}
+13 15 72 29
+nil
+
+TRUE
+X2_Motor
+X2_Motor
+0
+TStaticField
+0 {reference}
+75 15 130 29
+nil
+
+TRUE
+Set Motor
+.SetMotor(
+TBooleanField
+0 {reference}
+133 7 358 38
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+614 234 1226588 225 31
+3
+TStaticField
+0 {reference}
+19 8 37 22
+nil
+
+TRUE
+not
+(not(
+TBooleanField
+0 {reference}
+40 4 202 27
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+654 238 13921354 162 23
+2
+TNAxisListField
+0 {reference}
+19 4 78 18
+nil
+
+TRUE
+X2_Motor
+X2_Motor
+0
+TStaticField
+0 {reference}
+81 4 146 18
+nil
+
+TRUE
+Motor Is On
+.MotorIsOn
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+205 15 205 15
+nil
+
+TRUE
+
+))
+Boolean
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+361 22 361 22
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+X2 Toggle
+FALSE
+TControlButton
+0 {reference}
+PanToggleButton
+1090 280
+1160 310
+536870911
+Segoe UI
+1
+-16777208
+8
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+481 198 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+481 227 13921354 409 45
+4
+TNAxisListField
+0 {reference}
+13 15 89 29
+nil
+
+TRUE
+Theta_Motor
+Theta_Motor
+0
+TStaticField
+0 {reference}
+92 15 147 29
+nil
+
+TRUE
+Set Motor
+.SetMotor(
+TBooleanField
+0 {reference}
+150 7 392 38
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+631 234 1226588 242 31
+3
+TStaticField
+0 {reference}
+19 8 37 22
+nil
+
+TRUE
+not
+(not(
+TBooleanField
+0 {reference}
+40 4 219 27
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+671 238 13921354 179 23
+2
+TNAxisListField
+0 {reference}
+19 4 95 18
+nil
+
+TRUE
+Theta_Motor
+Theta_Motor
+0
+TStaticField
+0 {reference}
+98 4 163 18
+nil
+
+TRUE
+Motor Is On
+.MotorIsOn
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+222 15 222 15
+nil
+
+TRUE
+
+))
+Boolean
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+395 22 395 22
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+Pan Toggle
+FALSE
+TControlButton
+0 {reference}
+TiltToggleButton
+955 210
+1020 240
+536870911
+Segoe UI
+1
+-16777208
+8
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+481 198 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+481 227 13921354 379 45
+4
+TNAxisListField
+0 {reference}
+13 15 74 29
+nil
+
+TRUE
+Tilt_Motor
+Tilt_Motor
+0
+TStaticField
+0 {reference}
+77 15 132 29
+nil
+
+TRUE
+Set Motor
+.SetMotor(
+TBooleanField
+0 {reference}
+135 7 362 38
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+616 234 1226588 227 31
+3
+TStaticField
+0 {reference}
+19 8 37 22
+nil
+
+TRUE
+not
+(not(
+TBooleanField
+0 {reference}
+40 4 204 27
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+656 238 13921354 164 23
+2
+TNAxisListField
+0 {reference}
+19 4 80 18
+nil
+
+TRUE
+Tilt_Motor
+Tilt_Motor
+0
+TStaticField
+0 {reference}
+83 4 148 18
+nil
+
+TRUE
+Motor Is On
+.MotorIsOn
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+207 15 207 15
+nil
+
+TRUE
+
+))
+Boolean
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+365 22 365 22
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+Tilt Toggle
+FALSE
+TControlButton
+0 {reference}
+ZToggleButton
+960 480
+1025 510
+536870911
+Segoe UI
+1
+-16777208
+8
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+481 198 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+481 227 13921354 114 29
+3
+TNAxisListField
+0 {reference}
+13 7 64 21
+nil
+
+TRUE
+Z_Motor
+Z_Motor
+0
+TLocalListField
+0 {reference}
+71 7 101 21
+nil
+
+TRUE
+Stop
+.Stop;
+2
+Stop
+.Stop;
+Begin Stop
+.BeginStop;
+TStaticField
+0 {reference}
+104 7 113 21
+nil
+
+TRUE
+   
+
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+481 256 6333684 275 37
+3
+TStaticField
+0 {reference}
+9 11 62 25
+nil
+
+TRUE
+Wait until
+while not (
+TBooleanField
+0 {reference}
+65 7 255 30
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+546 263 13921354 190 23
+2
+TNAxisListField
+0 {reference}
+19 4 78 18
+nil
+
+TRUE
+X1_Motor
+X1_Motor
+0
+TStaticField
+0 {reference}
+81 4 174 18
+nil
+
+TRUE
+Move Is Finished
+.MoveIsFinished
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+258 18 258 18
+nil
+
+TRUE
+
+) do yield;
+TRUE
+TRUE
+FALSE
+TBlock
+0 {reference}
 3 {ReferenceLink}
-392 302 8388736 100 29
+481 293 8388736 100 29
 2
 TPathNameField
 0 {reference}
@@ -6382,113 +7593,120 @@ TRUE
 TRUE
 TRUE
 FALSE
-nil
-FALSE
-TRUE
-FALSE
-FALSE
-nil
-0 0  diagnostic marker
-Brake Engage
-FALSE
-TControlButton
-0 {reference}
-BrakeButton2
-1105 505
-1200 535
-536870911
-Segoe UI
-1
--16777208
-8
-0
-3
-TUserProcedure
-0 {reference}
-FALSE
-4
-procedure Click;
-  begin
-  {your program goes here - remove the curly comment brackets}
-  end;
-TRUE
-TUserProcedure
-0 {reference}
-FALSE
-4
-procedure MouseDown;
-  begin
-  {your program goes here - remove the curly comment brackets}
-  end;
-TRUE
-TUserProcedure
-0 {reference}
-FALSE
-4
-procedure MouseUp;
-  begin
-  {your program goes here - remove the curly comment brackets}
-  end;
-TRUE
-TBlock_H
-0 {reference}
-0 {ReferenceLink}
-673 263 1993170 60 29
-1
-TStaticField
-0 {reference}
-9 7 37 21
-nil
-
-TRUE
-Click
-Click
-FALSE
-TRUE
-FALSE
 TBlock
 0 {reference}
-4 {ReferenceLink}
-673 292 8388736 118 29
-2
-TPathNameField
+0 {ReferenceLink}
+481 322 13921354 359 45
+4
+TNAxisListField
 0 {reference}
-9 7 103 21
+13 15 64 29
 nil
 
 TRUE
-BrakeDisengage
-Main.BrakeDisengage
-Main.
-BrakeDisengage
-TRUE
-TRUE
-TRUE
+Z_Motor
+Z_Motor
+0
 TStaticField
 0 {reference}
-106 14 106 14
+67 15 122 29
+nil
+
+TRUE
+Set Motor
+.SetMotor(
+TBooleanField
+0 {reference}
+125 7 342 38
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+606 329 1226588 217 31
+3
+TStaticField
+0 {reference}
+19 8 37 22
+nil
+
+TRUE
+not
+(not(
+TBooleanField
+0 {reference}
+40 4 194 27
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+646 333 13921354 154 23
+2
+TNAxisListField
+0 {reference}
+19 4 70 18
+nil
+
+TRUE
+Z_Motor
+Z_Motor
+0
+TStaticField
+0 {reference}
+73 4 138 18
+nil
+
+TRUE
+Motor Is On
+.MotorIsOn
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+197 15 197 15
 nil
 
 TRUE
 
-;
+))
+Boolean
+Boolean
+TRUE
+TRUE
+On
+Off
+TStaticField
+0 {reference}
+345 22 345 22
+nil
+
+TRUE
+
+);
 TRUE
 TRUE
 FALSE
 nil
 FALSE
+FALSE
+FALSE
 TRUE
+FALSE
+FALSE
+FALSE
+FALSE
 FALSE
 FALSE
 nil
 0 0  diagnostic marker
-Brake Disengage
+Z Toggle
 FALSE
 TControlPlate
 7 {reference}
 AsciiCommands
-1245 45
-1405 90
+1175 560
+1335 605
 -16777211
 Tahoma
 1
@@ -6622,8 +7840,8 @@ Ascii Commands
 TControlPlate
 8 {reference}
 Comm
-1245 100
-1405 155
+1175 615
+1335 670
 -16777211
 Tahoma
 1
@@ -6693,7 +7911,7 @@ function  CanClose:boolean;
   end;
 TRUE
 TBlock_Procedure
-22 {reference}
+0 {reference}
 0 {ReferenceLink}
 293 65 8388736 261 29
 1
@@ -6711,7 +7929,7 @@ FALSE
 TBlock
 0 {reference}
 9 {ReferenceLink}
-293 94 8388736 530 29
+293 94 8388736 516 29
 12
 TPathNameField
 0 {reference}
@@ -6736,15 +7954,15 @@ IP3
 (
 TNumericField
 0 {reference}
-208 7 248 21
+208 7 241 21
 nil
 Number
 TRUE
- 1.92000000000000E+0002
+ 1.00000000000000E+0001
 FALSE
 TStaticField
 0 {reference}
-251 7 269 21
+244 7 262 21
 nil
 
 TRUE
@@ -6752,15 +7970,15 @@ IP2
 ,
 TNumericField
 0 {reference}
-276 7 316 21
+269 7 295 21
 nil
 Number
 TRUE
- 1.68000000000000E+0002
+ 1.00000000000000E+0000
 FALSE
 TStaticField
 0 {reference}
-319 7 337 21
+298 7 316 21
 nil
 
 TRUE
@@ -6768,15 +7986,15 @@ IP1
 ,
 TNumericField
 0 {reference}
-344 7 370 21
+323 7 356 21
 nil
 Number
 TRUE
- 2.00000000000000E+0000
+ 1.00000000000000E+0001
 FALSE
 TStaticField
 0 {reference}
-373 7 391 21
+359 7 377 21
 nil
 
 TRUE
@@ -6784,15 +8002,15 @@ IP0
 ,
 TNumericField
 0 {reference}
-398 7 438 21
+384 7 424 21
 nil
 Number
 TRUE
- 1.02000000000000E+0002
+ 1.00000000000000E+0002
 FALSE
 TStaticField
 0 {reference}
-441 7 465 21
+427 7 451 21
 nil
 
 TRUE
@@ -6800,7 +8018,7 @@ Port
 ,
 TNumericField
 0 {reference}
-472 7 505 21
+458 7 491 21
 nil
 Number
 TRUE
@@ -6808,7 +8026,7 @@ TRUE
 FALSE
 TStaticField
 0 {reference}
-508 14 508 14
+494 14 494 14
 nil
 
 TRUE
@@ -6970,8 +8188,8 @@ FALSE
 TControlPlate
 12 {reference}
 Comm
-1245 165
-1405 220
+1175 680
+1335 735
 -16777211
 Tahoma
 1
@@ -11785,6 +13003,579 @@ FALSE
 0
 FALSE
 
+TControlStatic
+0 {reference}
+DefaultText15
+380 420
+440 474
+-16777211
+Segoe UI
+1
+-16777208
+28
+0
+0
+nil
+0 0  diagnostic marker
+Pan
+2
+TControlStatic
+36 {reference}
+Sensor1Val
+445 420
+550 474
+-16777211
+Segoe UI
+1
+-16777208
+28
+0
+0
+TBlock_Show
+0 {reference}
+0 {ReferenceLink}
+365 219 1993170 303 37
+6
+TStaticField
+0 {reference}
+9 11 41 25
+nil
+
+TRUE
+Show
+Show
+TBooleanField
+0 {reference}
+44 7 179 30
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+409 226 3937500 144 23
+3
+TDigitalInputListField
+0 {reference}
+19 4 73 18
+nil
+
+TRUE
+PanLimit
+PanLimit
+0
+TStaticField
+0 {reference}
+76 4 86 18
+nil
+
+TRUE
+Is
+.Is
+TBooleanIsField
+0 {reference}
+93 4 128 18
+nil
+Boolean
+TRUE
+TRUE
+On
+Off
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+182 11 196 25
+nil
+
+TRUE
+as
+as
+TStringField
+0 {reference}
+203 11 238 25
+nil
+String
+TRUE
+On
+TStaticField
+0 {reference}
+241 11 244 25
+nil
+
+TRUE
+,
+,
+TStringField
+0 {reference}
+251 11 287 25
+nil
+String
+TRUE
+Off
+FALSE
+FALSE
+FALSE
+nil
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+
+0
+TControlStatic
+0 {reference}
+DefaultText16
+555 420
+605 474
+-16777211
+Segoe UI
+1
+-16777208
+28
+0
+0
+nil
+0 0  diagnostic marker
+Tilt
+2
+TControlStatic
+37 {reference}
+Sensor2Val
+610 420
+715 474
+-16777211
+Segoe UI
+1
+-16777208
+28
+0
+0
+TBlock_Show
+0 {reference}
+0 {ReferenceLink}
+365 219 1993170 310 37
+6
+TStaticField
+0 {reference}
+9 11 41 25
+nil
+
+TRUE
+Show
+Show
+TBooleanField
+0 {reference}
+44 7 186 30
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+409 226 3937500 139 23
+3
+TDigitalInputListField
+0 {reference}
+19 4 68 18
+nil
+
+TRUE
+TiltLimit
+TiltLimit
+0
+TStaticField
+0 {reference}
+71 4 81 18
+nil
+
+TRUE
+Is
+.Is
+TBooleanIsField
+0 {reference}
+88 4 123 18
+nil
+Boolean
+TRUE
+TRUE
+On
+Off
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+189 11 203 25
+nil
+
+TRUE
+as
+as
+TStringField
+0 {reference}
+210 11 245 25
+nil
+String
+TRUE
+On
+TStaticField
+0 {reference}
+248 11 251 25
+nil
+
+TRUE
+,
+,
+TStringField
+0 {reference}
+258 11 294 25
+nil
+String
+TRUE
+Off
+FALSE
+FALSE
+FALSE
+nil
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+
+0
+TControlStatic
+0 {reference}
+DefaultText17
+390 480
+440 534
+-16777211
+Segoe UI
+1
+-16777208
+28
+0
+0
+nil
+0 0  diagnostic marker
+Z
+2
+TControlStatic
+38 {reference}
+Sensor1Val3
+445 480
+550 534
+-16777211
+Segoe UI
+1
+-16777208
+28
+0
+0
+TBlock_Show
+0 {reference}
+0 {ReferenceLink}
+365 219 1993170 310 37
+6
+TStaticField
+0 {reference}
+9 11 41 25
+nil
+
+TRUE
+Show
+Show
+TBooleanField
+0 {reference}
+44 7 186 30
+TBooleanExpression
+0 {reference}
+0 {ReferenceLink}
+409 226 3937500 129 23
+3
+TDigitalInputListField
+0 {reference}
+19 4 58 18
+nil
+
+TRUE
+ZLimit
+ZLimit
+0
+TStaticField
+0 {reference}
+61 4 71 18
+nil
+
+TRUE
+Is
+.Is
+TBooleanIsField
+0 {reference}
+78 4 113 18
+nil
+Boolean
+TRUE
+TRUE
+On
+Off
+Boolean
+Boolean
+FALSE
+TRUE
+True
+False
+TStaticField
+0 {reference}
+189 11 203 25
+nil
+
+TRUE
+as
+as
+TStringField
+0 {reference}
+210 11 245 25
+nil
+String
+TRUE
+On
+TStaticField
+0 {reference}
+248 11 251 25
+nil
+
+TRUE
+,
+,
+TStringField
+0 {reference}
+258 11 294 25
+nil
+String
+TRUE
+Off
+FALSE
+FALSE
+FALSE
+nil
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+
+0
+TControlButton
+0 {reference}
+A_PButton
+570 490
+610 525
+536870911
+Segoe UI
+1
+-16777208
+16
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+425 251 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+425 280 3937500 217 29
+4
+TAnalogOutputListField
+0 {reference}
+13 7 107 21
+nil
+
+TRUE
+LightBrightness
+LightBrightness
+0
+TStaticField
+0 {reference}
+110 7 175 21
+nil
+
+TRUE
+Set Voltage
+.SetVoltage(
+TNumericField
+0 {reference}
+182 7 208 21
+nil
+Number
+TRUE
+ 4.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+211 14 211 14
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
++
+FALSE
+TControlButton
+0 {reference}
+A_PButton2
+650 490
+690 525
+536870911
+Segoe UI
+1
+-16777208
+16
+0
+3
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure Click;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseDown;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TUserProcedure
+0 {reference}
+FALSE
+4
+procedure MouseUp;
+  begin
+  {your program goes here - remove the curly comment brackets}
+  end;
+TRUE
+TBlock_H
+0 {reference}
+0 {ReferenceLink}
+425 251 1993170 60 29
+1
+TStaticField
+0 {reference}
+9 7 37 21
+nil
+
+TRUE
+Click
+Click
+FALSE
+TRUE
+FALSE
+TBlock
+0 {reference}
+0 {ReferenceLink}
+425 280 3937500 217 29
+4
+TAnalogOutputListField
+0 {reference}
+13 7 107 21
+nil
+
+TRUE
+LightBrightness
+LightBrightness
+0
+TStaticField
+0 {reference}
+110 7 175 21
+nil
+
+TRUE
+Set Voltage
+.SetVoltage(
+TNumericField
+0 {reference}
+182 7 208 21
+nil
+Number
+TRUE
+ 1.00000000000000E+0000
+TRUE
+TStaticField
+0 {reference}
+211 14 211 14
+nil
+
+TRUE
+
+);
+TRUE
+TRUE
+FALSE
+nil
+FALSE
+FALSE
+FALSE
+FALSE
+nil
+0 0  diagnostic marker
+-
+FALSE
 0
 -2134376448
 1
@@ -11793,9 +13584,9 @@ FALSE
 1
 FALSE
 http://google.com/
-2
+0
 1000
-FALSE
+TRUE
 3
 Maximum Persistent Word Adjustment
 const MaxPersistentWords=0;
